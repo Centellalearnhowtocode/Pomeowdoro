@@ -135,11 +135,10 @@ void MainWindow::updateDisplay() {
 }
 
 void MainWindow::applyStyle() {
-    // Colors/fonts kept simple and centralized here so they're easy to
-    // swap out later when the theme/font picker is built.
+  //QSS for UI
     setStyleSheet(R"(
         QWidget {
-            background-color: #2b0f14;
+            background: #2b0f14;
             color: #f5e6e8;
             font-family: "Segoe UI";
         }
@@ -158,17 +157,17 @@ void MainWindow::applyStyle() {
             color: #c9a0a8;
         }
         QPushButton {
-            background-color: #7a2b3c;
+            background: #7a2b3c;
             border: none;
             border-radius: 6px;
             padding: 10px 18px;
             font-size: 14px;
         }
         QPushButton:hover {
-            background-color: #93394d;
+            background: #93394d;
         }
         QSpinBox {
-            background-color: #3d161d;
+            background: #3d161d;
             border: 1px solid #7a2b3c;
             border-radius: 4px;
             padding: 4px;
