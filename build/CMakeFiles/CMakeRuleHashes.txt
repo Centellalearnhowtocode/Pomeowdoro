@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+5d21ec0d1177f56161cee840acd3bdd6 CMakeFiles/PomodoroClock_autogen
+0212572a7d0e5991c14045d029057a7f PomodoroClock_autogen/timestamp

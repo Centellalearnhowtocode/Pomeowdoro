@@ -1,0 +1,5 @@
+D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/PomodoroClock.dir
+D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/edit_cache.dir
+D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/rebuild_cache.dir
+D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/PomodoroClock_autogen_timestamp_deps.dir
+D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/PomodoroClock_autogen.dir
