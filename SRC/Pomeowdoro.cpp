@@ -14,17 +14,19 @@ MainWindow::MainWindow(QWidget *parent)
       secondsRemaining(25 * 60),
       isRunning(false),
       currentMode(Mode::Work),
-      sessionCount(0)
+      sessionCount(0),
+      totalElapsedSeconds(0),
+      loopsRemaining(4)
 {
-    setWindowTitle("Pomodoro Clock");
-    resize(360, 420);
+    setWindowTitle("Pomeowdoro Clock");
+    resize(600, 320);
 
     auto *central = new QWidget(this);
     auto *mainLayout = new QVBoxLayout(central);
     mainLayout->setSpacing(18);
     mainLayout->setContentsMargins(30, 30, 30, 30);
 
-    modeLabel = new QLabel("WORK", central);
+    modeLabel = new QLabel("Pomeowdoro", central);
     modeLabel->setAlignment(Qt::AlignCenter);
     modeLabel->setObjectName("modeLabel");
 
@@ -32,15 +34,21 @@ MainWindow::MainWindow(QWidget *parent)
     timeLabel->setAlignment(Qt::AlignCenter);
     timeLabel->setObjectName("timeLabel");
 
-    sessionLabel = new QLabel("Sessions completed: 0", central);
+    sessionLabel = new QLabel("Loops completed: 0", central);
     sessionLabel->setAlignment(Qt::AlignCenter);
     sessionLabel->setObjectName("sessionLabel");
+
+    totalTimeLabel = new QLabel("Total time today: 00:00:00", central);
+    totalTimeLabel->setAlignment(Qt::AlignCenter);
+    totalTimeLabel->setObjectName("totalTimeLabel");
 
     auto *buttonRow = new QHBoxLayout();
     startPauseButton = new QPushButton("Start", central);
     resetButton = new QPushButton("Reset", central);
+    skipButton = new QPushButton("Skip", central);
     buttonRow->addWidget(startPauseButton);
     buttonRow->addWidget(resetButton);
+    buttonRow->addWidget(skipButton);
 
     auto *durationForm = new QFormLayout();
     workMinutesSpin = new QSpinBox(central);
@@ -52,9 +60,15 @@ MainWindow::MainWindow(QWidget *parent)
     durationForm->addRow("Work (min):", workMinutesSpin);
     durationForm->addRow("Break (min):", breakMinutesSpin);
 
+    sessionLoopsSpin = new QSpinBox(central);
+    sessionLoopsSpin->setRange(1, 20);
+    sessionLoopsSpin->setValue(4);
+    durationForm->addRow("Session (loops):", sessionLoopsSpin);
+
     mainLayout->addWidget(modeLabel);
     mainLayout->addWidget(timeLabel);
     mainLayout->addWidget(sessionLabel);
+    mainLayout->addWidget(totalTimeLabel);
     mainLayout->addLayout(buttonRow);
     mainLayout->addLayout(durationForm);
 
@@ -62,9 +76,16 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(startPauseButton, &QPushButton::clicked, this, &MainWindow::onStartPauseClicked);
     connect(resetButton, &QPushButton::clicked, this, &MainWindow::onResetClicked);
+    connect(skipButton, &QPushButton::clicked, this, &MainWindow::onSkipClicked);
     connect(timer, &QTimer::timeout, this, &MainWindow::onTick);
     connect(workMinutesSpin, &QSpinBox::valueChanged, this, &MainWindow::onDurationChanged);
     connect(breakMinutesSpin, &QSpinBox::valueChanged, this, &MainWindow::onDurationChanged);
+    connect(sessionLoopsSpin, &QSpinBox::valueChanged, this, [this](int value) {
+        if (!isRunning) {
+            loopsRemaining = value;
+            updateDisplay();
+        }
+    });
 
     timer->setInterval(1000);
 
@@ -73,12 +94,16 @@ MainWindow::MainWindow(QWidget *parent)
 }
 
 void MainWindow::onStartPauseClicked() {
+    if (loopsRemaining <= 0) {
+        return; // already done, must Reset first
+    }
     isRunning = !isRunning;
     if (isRunning) {
         timer->start();
         startPauseButton->setText("Pause");
         workMinutesSpin->setEnabled(false);
         breakMinutesSpin->setEnabled(false);
+        sessionLoopsSpin->setEnabled(false);
     } else {
         timer->stop();
         startPauseButton->setText("Start");
@@ -89,24 +114,58 @@ void MainWindow::onResetClicked() {
     timer->stop();
     isRunning = false;
     startPauseButton->setText("Start");
+    startPauseButton->setEnabled(true);
     workMinutesSpin->setEnabled(true);
     breakMinutesSpin->setEnabled(true);
+    sessionLoopsSpin->setEnabled(true);
     currentMode = Mode::Work;
     secondsRemaining = workMinutesSpin->value() * 60;
     sessionCount = 0;
+    totalElapsedSeconds = 0;
+    loopsRemaining = sessionLoopsSpin->value();
     updateDisplay();
 }
 
+void MainWindow::completeLoop() {
+    sessionCount++;
+    if (loopsRemaining > 0) {
+        loopsRemaining--;
+    }
+    if (loopsRemaining <= 0) {
+        timer->stop();
+        isRunning = false;
+        startPauseButton->setText("Done");
+        startPauseButton->setEnabled(false);
+        updateDisplay();
+        return;
+    }
+    switchMode(Mode::Work);
+}
+
+void MainWindow::onSkipClicked() {
+    if (loopsRemaining <= 0) {
+        return;
+    }
+    // 1 loop = 1 Work block + 1 Break block.
+    // Loop count only decreases once Break finishes.
+    if (currentMode == Mode::Work) {
+        switchMode(Mode::Break);
+    } else {
+        completeLoop();
+    }
+}
+
 void MainWindow::onTick() {
+    totalElapsedSeconds++;
+
     if (secondsRemaining > 0) {
         secondsRemaining--;
         updateDisplay();
     } else {
         if (currentMode == Mode::Work) {
-            sessionCount++;
             switchMode(Mode::Break);
         } else {
-            switchMode(Mode::Work);
+            completeLoop();
         }
     }
 }
@@ -130,8 +189,16 @@ void MainWindow::updateDisplay() {
     timeLabel->setText(QString("%1:%2")
                             .arg(minutes, 2, 10, QChar('0'))
                             .arg(seconds, 2, 10, QChar('0')));
-    modeLabel->setText(currentMode == Mode::Work ? "WORK" : "BREAK");
-    sessionLabel->setText(QString("Sessions completed: %1").arg(sessionCount));
+    modeLabel->setText(loopsRemaining <= 0 ? "DONE" : (currentMode == Mode::Work ? "Pomeowdoro Clock" : "BREAK"));
+    sessionLabel->setText(QString("Loops completed: %1  |  Remaining: %2").arg(sessionCount).arg(loopsRemaining));
+
+    int totalHours = totalElapsedSeconds / 3600;
+    int totalMinutes = (totalElapsedSeconds % 3600) / 60;
+    int totalSecs = totalElapsedSeconds % 60;
+    totalTimeLabel->setText(QString("Total time today: %1:%2:%3")
+                                 .arg(totalHours, 2, 10, QChar('0'))
+                                 .arg(totalMinutes, 2, 10, QChar('0'))
+                                 .arg(totalSecs, 2, 10, QChar('0')));
 }
 
 void MainWindow::applyStyle() {
@@ -156,6 +223,10 @@ void MainWindow::applyStyle() {
             font-size: 13px;
             color: #c9a0a8;
         }
+        QLabel#totalTimeLabel {
+            font-size: 12px;
+            color: #a5828a;
+        }
         QPushButton {
             background: #7a2b3c;
             border: none;
@@ -165,6 +236,10 @@ void MainWindow::applyStyle() {
         }
         QPushButton:hover {
             background: #93394d;
+        }
+        QPushButton:disabled {
+            background: #4a1e28;
+            color: #8a6a70;
         }
         QSpinBox {
             background: #3d161d;
