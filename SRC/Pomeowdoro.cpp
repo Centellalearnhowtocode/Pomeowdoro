@@ -205,7 +205,7 @@ void MainWindow::applyStyle() {
   //QSS for UI
     setStyleSheet(R"(
         QWidget {
-            background: #2b0f14;
+            background: #f26a8d;
             color: #f5e6e8;
             font-family: "Segoe UI";
         }
@@ -213,7 +213,7 @@ void MainWindow::applyStyle() {
             font-size: 18px;
             font-weight: bold;
             letter-spacing: 4px;
-            color: #d98ea1;
+            color: #D8E2DC ;
         }
         QLabel#timeLabel {
             font-size: 56px;
@@ -221,16 +221,15 @@ void MainWindow::applyStyle() {
         }
         QLabel#sessionLabel {
             font-size: 13px;
-            color: #c9a0a8;
+            color: #D8E2DC ;
         }
         QLabel#totalTimeLabel {
             font-size: 12px;
-            color: #a5828a;
+            color: #D8E2DC ;
         }
         QPushButton {
             background: #7a2b3c;
-            border: none;
-            border-radius: 6px;
+            border-radius: 10px;
             padding: 10px 18px;
             font-size: 14px;
         }
@@ -244,7 +243,7 @@ void MainWindow::applyStyle() {
         QSpinBox {
             background: #3d161d;
             border: 1px solid #7a2b3c;
-            border-radius: 4px;
+            border-radius: 5px;
             padding: 4px;
         }
     )");
