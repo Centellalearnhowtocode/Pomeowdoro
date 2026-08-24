@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\SRC\Pomeowdoro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\SRC\Pomeowdoro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1BD7F045-C8CC-359C-9C60-3951ADBC3F98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{90A47132-3329-3F98-8999-163118B544A4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
