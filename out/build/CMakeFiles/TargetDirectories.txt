@@ -1,0 +1,3 @@
+D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/out/build/CMakeFiles/main.dir
+D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/out/build/CMakeFiles/edit_cache.dir
+D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/out/build/CMakeFiles/rebuild_cache.dir
