@@ -1,0 +1,11 @@
+{
+  "cmake.configurePreset": "mingw",
+  "cmake.buildPreset": "mingw",
+  "cmake.generator": "MinGW Makefiles",
+  "cmake.configureSettings": {
+    "CMAKE_PREFIX_PATH": "C:/Qt/6.11.1/mingw_64",
+    "CMAKE_C_COMPILER": "C:/Qt/Tools/mingw1310_64/bin/gcc.exe",
+    "CMAKE_CXX_COMPILER": "C:/Qt/Tools/mingw1310_64/bin/g++.exe"
+  },
+  "cmake.buildDirectory": "${workspaceFolder}/build"
+}
