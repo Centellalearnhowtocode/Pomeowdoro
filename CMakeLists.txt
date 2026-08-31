@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.13.4)
 
 set(CMAKE_PREFIX_PATH "C:/Qt/6.11.1/mingw_64")
+set(CMAKE_C_COMPILER "C:/Qt/Tools/mingw1310_64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/Qt/Tools/mingw1310_64/bin/g++.exe")
+
 project(Pomeowdoro)
 
 set(CMAKE_AUTOMOC ON)
