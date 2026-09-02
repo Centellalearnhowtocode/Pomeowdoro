@@ -52,7 +52,7 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro"
+CMAKE_SOURCE_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build"
@@ -91,6 +91,6 @@ CMakeFiles/Pomeowdoro_autogen.dir/clean:
 .PHONY : CMakeFiles/Pomeowdoro_autogen.dir/clean
 
 CMakeFiles/Pomeowdoro_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles\Pomeowdoro_autogen.dir\DependInfo.cmake" "--color=$(COLOR)" Pomeowdoro_autogen
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles\Pomeowdoro_autogen.dir\DependInfo.cmake" "--color=$(COLOR)" Pomeowdoro_autogen
 .PHONY : CMakeFiles/Pomeowdoro_autogen.dir/depend
 

@@ -1,0 +1,8 @@
+[  0%] Built target Pomeowdoro_autogen_timestamp_deps
+[ 11%] Built target Pomeowdoro_autogen
+[ 22%] Linking CXX executable Pomeowdoro.exe
+collect2.exe: error: ld returned 5 exit status
+mingw32-make[2]: *** [CMakeFiles\Pomeowdoro.dir\build.make:189: Pomeowdoro.exe] Error 1
+mingw32-make[2]: *** Deleting file 'Pomeowdoro.exe'
+mingw32-make[1]: *** [CMakeFiles\Makefile2:89: CMakeFiles/Pomeowdoro.dir/all] Error 2
+mingw32-make: *** [Makefile:90: all] Error 2

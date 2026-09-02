@@ -300,7 +300,7 @@ Pomeowdoro_BINARY_DIR:STATIC=D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build
 Pomeowdoro_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Pomeowdoro_SOURCE_DIR:STATIC=D:/ITE/Year 1/Semester 2/CPL/Pomewodoro
+Pomeowdoro_SOURCE_DIR:STATIC=D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src
 
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
@@ -447,7 +447,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=D:/ITE/Year 1/Semester 2/CPL/Pomewodoro
+CMAKE_HOME_DIRECTORY:INTERNAL=D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

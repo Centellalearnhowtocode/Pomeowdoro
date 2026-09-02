@@ -1,4 +1,4 @@
-# Install script for directory: D:/ITE/Year 1/Semester 2/CPL/Pomewodoro
+# Install script for directory: D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

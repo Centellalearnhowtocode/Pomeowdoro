@@ -52,7 +52,7 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro"
+CMAKE_SOURCE_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build"
@@ -75,6 +75,14 @@ Pomeowdoro_autogen/timestamp: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
 	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenInfo.json" ""
 	"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/timestamp"
 
+Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp: D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/src/resources.qrc
+Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/Pomeowdoro_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp: D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/src/style.qss
+Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Qt/6.11.1/mingw_64/bin/rcc.exe
+Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Qt/6.11.1/mingw_64/bin/rcc.exe
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json" 
+
 CMakeFiles/Pomeowdoro.dir/codegen:
 .PHONY : CMakeFiles/Pomeowdoro.dir/codegen
 
@@ -82,7 +90,7 @@ CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: CMakeFile
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: Pomeowdoro_autogen/mocs_compilation.cpp
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.obj -c "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp"
 
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.i: cmake_force
@@ -95,29 +103,80 @@ CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.s: cmake_force
 
 CMakeFiles/Pomeowdoro.dir/main.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
 CMakeFiles/Pomeowdoro.dir/main.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
-CMakeFiles/Pomeowdoro.dir/main.cpp.obj: D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/main.cpp
+CMakeFiles/Pomeowdoro.dir/main.cpp.obj: D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/src/main.cpp
 CMakeFiles/Pomeowdoro.dir/main.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pomeowdoro.dir/main.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/main.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\main.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\main.cpp.obj -c "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Pomeowdoro.dir/main.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/main.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\main.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\main.cpp.obj -c "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\main.cpp"
 
 CMakeFiles/Pomeowdoro.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/main.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\main.cpp" > CMakeFiles\Pomeowdoro.dir\main.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\main.cpp" > CMakeFiles\Pomeowdoro.dir\main.cpp.i
 
 CMakeFiles/Pomeowdoro.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/main.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\main.cpp" -o CMakeFiles\Pomeowdoro.dir\main.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\main.cpp" -o CMakeFiles\Pomeowdoro.dir\main.cpp.s
+
+CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
+CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
+CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj: D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/src/pomoclock.cpp
+CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\pomoclock.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\pomoclock.cpp.obj -c "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\pomoclock.cpp"
+
+CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\pomoclock.cpp" > CMakeFiles\Pomeowdoro.dir\pomoclock.cpp.i
+
+CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\pomoclock.cpp" -o CMakeFiles\Pomeowdoro.dir\pomoclock.cpp.s
+
+CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
+CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
+CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj: D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/src/createaccount.cpp
+CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\createaccount.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\createaccount.cpp.obj -c "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\createaccount.cpp"
+
+CMakeFiles/Pomeowdoro.dir/createaccount.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/createaccount.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\createaccount.cpp" > CMakeFiles\Pomeowdoro.dir\createaccount.cpp.i
+
+CMakeFiles/Pomeowdoro.dir/createaccount.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/createaccount.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src\createaccount.cpp" -o CMakeFiles\Pomeowdoro.dir\createaccount.cpp.s
+
+CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
+CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
+CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj: Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp
+CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp"
+
+CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp" > CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp.i
+
+CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp" -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp.s
 
 # Object files for target Pomeowdoro
 Pomeowdoro_OBJECTS = \
 "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj" \
-"CMakeFiles/Pomeowdoro.dir/main.cpp.obj"
+"CMakeFiles/Pomeowdoro.dir/main.cpp.obj" \
+"CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj" \
+"CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj" \
+"CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target Pomeowdoro
 Pomeowdoro_EXTERNAL_OBJECTS =
 
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/main.cpp.obj
+Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj
+Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj
+Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/build.make
 Pomeowdoro.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a
 Pomeowdoro.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Sql.a
@@ -126,7 +185,7 @@ Pomeowdoro.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Core.a
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/linkLibs.rsp
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/objects1.rsp
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Pomeowdoro.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Pomeowdoro.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Pomeowdoro.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,7 +196,8 @@ CMakeFiles/Pomeowdoro.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\Pomeowdoro.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/Pomeowdoro.dir/clean
 
+CMakeFiles/Pomeowdoro.dir/depend: Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/Pomeowdoro.dir/depend: Pomeowdoro_autogen/timestamp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles\Pomeowdoro.dir\DependInfo.cmake" "--color=$(COLOR)" Pomeowdoro
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles\Pomeowdoro.dir\DependInfo.cmake" "--color=$(COLOR)" Pomeowdoro
 .PHONY : CMakeFiles/Pomeowdoro.dir/depend
 
