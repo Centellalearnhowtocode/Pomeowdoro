@@ -52,10 +52,14 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src"
+=======
+CMAKE_SOURCE_DIR = C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build"
+CMAKE_BINARY_DIR = C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build
 
 # Utility rule file for Pomeowdoro_autogen.
 
@@ -70,9 +74,9 @@ CMakeFiles/Pomeowdoro_autogen: Pomeowdoro_autogen/timestamp
 Pomeowdoro_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/moc.exe
 Pomeowdoro_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/uic.exe
 Pomeowdoro_autogen/timestamp: CMakeFiles/Pomeowdoro_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Pomeowdoro"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenInfo.json" ""
-	"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/timestamp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Pomeowdoro"
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenInfo.json Debug
+	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/Pomeowdoro_autogen/timestamp
 
 CMakeFiles/Pomeowdoro_autogen.dir/codegen:
 .PHONY : CMakeFiles/Pomeowdoro_autogen.dir/codegen
@@ -91,6 +95,10 @@ CMakeFiles/Pomeowdoro_autogen.dir/clean:
 .PHONY : CMakeFiles/Pomeowdoro_autogen.dir/clean
 
 CMakeFiles/Pomeowdoro_autogen.dir/depend:
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles\Pomeowdoro_autogen.dir\DependInfo.cmake" "--color=$(COLOR)" Pomeowdoro_autogen
+=======
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\CMakeFiles\Pomeowdoro_autogen.dir\DependInfo.cmake "--color=$(COLOR)" Pomeowdoro_autogen
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 .PHONY : CMakeFiles/Pomeowdoro_autogen.dir/depend
 

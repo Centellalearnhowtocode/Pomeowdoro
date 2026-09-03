@@ -1,4 +1,9 @@
 # Hashes of file build rules.
+<<<<<<< HEAD
 5d21ec0d1177f56161cee840acd3bdd6 CMakeFiles/Pomeowdoro_autogen
 ffddc828f02e20fa4f799d643ff29814 Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp
 0cd2e339590182a4b81717add9f26d50 Pomeowdoro_autogen/timestamp
+=======
+2fef42621d4d6f187e34b1c984ea46a0 CMakeFiles/Pomeowdoro_autogen
+9ca754658ef2d6b0b901969dfc39dcf0 Pomeowdoro_autogen/timestamp
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925

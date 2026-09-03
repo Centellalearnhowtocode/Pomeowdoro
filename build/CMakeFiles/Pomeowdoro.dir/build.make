@@ -52,10 +52,14 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src"
+=======
+CMAKE_SOURCE_DIR = C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build"
+CMAKE_BINARY_DIR = C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Pomeowdoro.dir/depend.make
@@ -71,9 +75,9 @@ include CMakeFiles/Pomeowdoro.dir/flags.make
 Pomeowdoro_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/moc.exe
 Pomeowdoro_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/uic.exe
 Pomeowdoro_autogen/timestamp: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Pomeowdoro"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenInfo.json" ""
-	"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/timestamp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Pomeowdoro"
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenInfo.json Debug
+	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/Pomeowdoro_autogen/timestamp
 
 Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp: D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/src/resources.qrc
 Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/Pomeowdoro_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
@@ -90,19 +94,25 @@ CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: CMakeFile
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: Pomeowdoro_autogen/mocs_compilation.cpp
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.obj -c "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.obj -c C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp" > CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp > CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp" -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/Pomeowdoro.dir/main.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
 CMakeFiles/Pomeowdoro.dir/main.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
+<<<<<<< HEAD
 CMakeFiles/Pomeowdoro.dir/main.cpp.obj: D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/src/main.cpp
 CMakeFiles/Pomeowdoro.dir/main.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Pomeowdoro.dir/main.cpp.obj"
@@ -160,6 +170,20 @@ CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.i: cma
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp" -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\EWIEGA46WW\qrc_resources.cpp.s
+=======
+CMakeFiles/Pomeowdoro.dir/main.cpp.obj: C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/main.cpp
+CMakeFiles/Pomeowdoro.dir/main.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pomeowdoro.dir/main.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/main.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\main.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\main.cpp.obj -c C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\main.cpp
+
+CMakeFiles/Pomeowdoro.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/main.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\main.cpp > CMakeFiles\Pomeowdoro.dir\main.cpp.i
+
+CMakeFiles/Pomeowdoro.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/main.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\main.cpp -o CMakeFiles\Pomeowdoro.dir\main.cpp.s
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 
 # Object files for target Pomeowdoro
 Pomeowdoro_OBJECTS = \
@@ -185,7 +209,11 @@ Pomeowdoro.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Core.a
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/linkLibs.rsp
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/objects1.rsp
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Pomeowdoro.exe"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Pomeowdoro.exe"
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Pomeowdoro.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -198,6 +226,10 @@ CMakeFiles/Pomeowdoro.dir/clean:
 
 CMakeFiles/Pomeowdoro.dir/depend: Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/Pomeowdoro.dir/depend: Pomeowdoro_autogen/timestamp
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles\Pomeowdoro.dir\DependInfo.cmake" "--color=$(COLOR)" Pomeowdoro
+=======
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\CMakeFiles\Pomeowdoro.dir\DependInfo.cmake "--color=$(COLOR)" Pomeowdoro
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 .PHONY : CMakeFiles/Pomeowdoro.dir/depend
 

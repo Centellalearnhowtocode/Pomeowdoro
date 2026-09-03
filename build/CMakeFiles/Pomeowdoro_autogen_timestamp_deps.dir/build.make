@@ -52,10 +52,14 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src"
+=======
+CMAKE_SOURCE_DIR = C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build"
+CMAKE_BINARY_DIR = C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build
 
 # Utility rule file for Pomeowdoro_autogen_timestamp_deps.
 
@@ -80,6 +84,10 @@ CMakeFiles/Pomeowdoro_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Pomeowdoro_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Pomeowdoro_autogen_timestamp_deps.dir/depend:
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\src" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build" "D:\ITE\Year 1\Semester 2\CPL\Pomewodoro\build\CMakeFiles\Pomeowdoro_autogen_timestamp_deps.dir\DependInfo.cmake" "--color=$(COLOR)" Pomeowdoro_autogen_timestamp_deps
+=======
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\CMakeFiles\Pomeowdoro_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)" Pomeowdoro_autogen_timestamp_deps
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 .PHONY : CMakeFiles/Pomeowdoro_autogen_timestamp_deps.dir/depend
 

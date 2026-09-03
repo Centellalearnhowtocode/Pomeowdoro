@@ -119,6 +119,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeInspectCLinker.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeInspectCXXLinker.cmake"
+<<<<<<< HEAD
+=======
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCommon.cmake"
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckFlagCommonConfig.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake"
@@ -351,12 +355,20 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake"
   "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake"
   "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake"
+<<<<<<< HEAD
   "CMakeFiles/4.4.0-rc2/CMakeCCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeRCCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeSystem.cmake"
   "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/CMakeLists.txt"
   "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/resources.qrc"
+=======
+  "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/CMakeLists.txt"
+  "CMakeFiles/4.4.3/CMakeCCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeRCCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeSystem.cmake"
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
   )
 
 # The corresponding makefile is:
@@ -367,6 +379,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+<<<<<<< HEAD
   "CMakeFiles/4.4.0-rc2/CMakeSystem.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeCCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake"
@@ -375,6 +388,16 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/4.4.0-rc2/CMakeCCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake"
+=======
+  "CMakeFiles/4.4.3/CMakeSystem.cmake"
+  "CMakeFiles/4.4.3/CMakeCCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeRCCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeCCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeCCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
   "CMakeFiles/Pomeowdoro_autogen.dir/AutogenInfo.json"
   "CMakeFiles/Pomeowdoro_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json"
   ".qt/QtDeploySupport.cmake"

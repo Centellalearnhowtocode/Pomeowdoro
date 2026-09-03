@@ -1,5 +1,5 @@
-D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro.dir
-D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/edit_cache.dir
-D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/rebuild_cache.dir
-D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen_timestamp_deps.dir
-D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir
+C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/Pomeowdoro.dir
+C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/edit_cache.dir
+C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen_timestamp_deps.dir
+C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir

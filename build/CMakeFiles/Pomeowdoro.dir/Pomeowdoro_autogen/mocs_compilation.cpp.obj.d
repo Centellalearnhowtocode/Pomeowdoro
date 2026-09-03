@@ -1,4 +1,5 @@
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: \
+<<<<<<< HEAD
  D:\ITE\Year\ 1\Semester\ 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp \
  D:\ITE\Year\ 1\Semester\ 2\CPL\Pomewodoro\build\Pomeowdoro_autogen\EWIEGA46WW/moc_createaccount.cpp \
  D:/ITE/Year\ 1/Semester\ 2/CPL/Pomewodoro/src/createaccount.h \
@@ -422,3 +423,6 @@ CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtextformat.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qpen.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtextoption.h
+=======
+ C:\Users\Admin\OneDrive\Desktop\rean-vue\Pomewodoro\build\Pomeowdoro_autogen\mocs_compilation.cpp
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925

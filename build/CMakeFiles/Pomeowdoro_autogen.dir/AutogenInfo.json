@@ -1,5 +1,6 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+<<<<<<< HEAD
 	"BUILD_DIR" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen",
 	"CMAKE_BINARY_DIR" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build",
 	"CMAKE_CURRENT_BINARY_DIR" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build",
@@ -11,6 +12,19 @@
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystem.cmake.in",
 		"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/4.4.0-rc2/CMakeSystem.cmake",
+=======
+	"BUILD_DIR" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/Pomeowdoro_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/CMakeLists.txt",
+		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake",
+		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystem.cmake.in",
+		"C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/4.4.3/CMakeSystem.cmake",
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeMinGWFindMake.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake",
@@ -69,7 +83,11 @@
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompiler.cmake.in",
+<<<<<<< HEAD
 		"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/4.4.0-rc2/CMakeCCompiler.cmake",
+=======
+		"C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/4.4.3/CMakeCCompiler.cmake",
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompiler.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Determine-CXX.cmake",
@@ -123,7 +141,11 @@
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompiler.cmake.in",
+<<<<<<< HEAD
 		"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake",
+=======
+		"C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake",
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake",
@@ -138,7 +160,11 @@
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineRCCompiler.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeRCCompiler.cmake.in",
+<<<<<<< HEAD
 		"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/4.4.0-rc2/CMakeRCCompiler.cmake",
+=======
+		"C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/4.4.3/CMakeRCCompiler.cmake",
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestRCCompiler.cmake",
@@ -155,7 +181,11 @@
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerSupport.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/FeatureTesting.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompiler.cmake.in",
+<<<<<<< HEAD
 		"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/4.4.0-rc2/CMakeCCompiler.cmake",
+=======
+		"C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/4.4.3/CMakeCCompiler.cmake",
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C-ABI.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake",
@@ -184,7 +214,11 @@
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerSupport.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/FeatureTesting.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompiler.cmake.in",
+<<<<<<< HEAD
 		"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake",
+=======
+		"C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake",
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake",
@@ -209,6 +243,7 @@
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckFlagCommonConfig.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake",
+		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCommon.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXSourceCompiles.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake",
@@ -252,7 +287,9 @@
 		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CheckLibraryExists.cmake",
+		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCommon.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFile.cmake",
+		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCommon.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCSourceCompiles.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/FindPackageHandleStandardArgs.cmake",
@@ -482,9 +519,13 @@
 		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessAliasTargets.cmake",
 		"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/resources.qrc"
 	],
+<<<<<<< HEAD
 	"CMAKE_SOURCE_DIR" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src",
+=======
+	"CMAKE_SOURCE_DIR" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro",
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/deps",
+	"DEP_FILE" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/Pomeowdoro_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "Pomeowdoro_autogen/timestamp",
 	"HEADERS" : 
 	[
@@ -502,14 +543,13 @@
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/include",
-	"MOC_COMPILATION_FILE" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/Pomeowdoro_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/Pomeowdoro_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
-		"QT_NO_DEBUG",
 		"QT_SQL_LIB",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
@@ -534,12 +574,12 @@
 		"C:/Qt/6.11.1/mingw_64/mkspecs/win32-g++",
 		"C:/Qt/6.11.1/mingw_64/include/QtGui",
 		"C:/Qt/6.11.1/mingw_64/include/QtSql",
-		"C:/msys64/ucrt64/include/c++/16.1.0",
-		"C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32",
-		"C:/msys64/ucrt64/include/c++/16.1.0/backward",
-		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include",
-		"C:/msys64/ucrt64/include",
-		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed"
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
+		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
+		"C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -554,27 +594,28 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"C:/msys64/ucrt64/bin/c++.exe",
+		"C:/Qt/Tools/mingw1310_64/bin/g++.exe",
 		"-std=gnu++17",
 		"-w",
 		"-dM",
 		"-E",
 		"C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/Pomeowdoro_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 16,
+	"PARSE_CACHE_FILE" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.11.1/mingw_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.11.1/mingw_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 11,
-	"SETTINGS_FILE" : "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
+<<<<<<< HEAD
 			"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/createaccount.cpp",
 			"MU",
 			null
@@ -582,6 +623,9 @@
 		[ "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/main.cpp", "MU", null ],
 		[
 			"D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/pomoclock.cpp",
+=======
+			"C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/main.cpp",
+>>>>>>> 7dba095637abb2292f7812685e74c74df6367925
 			"MU",
 			null
 		]
