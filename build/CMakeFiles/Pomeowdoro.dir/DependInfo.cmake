@@ -9,16 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "Pomeowdoro_autogen/timestamp" "custom" "Pomeowdoro_autogen/deps"
-<<<<<<< HEAD
-  "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/EWIEGA46WW/qrc_resources.cpp.obj.d"
-  "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/build/Pomeowdoro_autogen/mocs_compilation.cpp" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj.d"
-  "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/createaccount.cpp" "CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/createaccount.cpp.obj.d"
-  "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/main.cpp" "CMakeFiles/Pomeowdoro.dir/main.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/main.cpp.obj.d"
-  "D:/ITE/Year 1/Semester 2/CPL/Pomewodoro/src/pomoclock.cpp" "CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/pomoclock.cpp.obj.d"
-=======
-  "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/build/Pomeowdoro_autogen/mocs_compilation.cpp" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj.d"
-  "C:/Users/Admin/OneDrive/Desktop/rean-vue/Pomewodoro/main.cpp" "CMakeFiles/Pomeowdoro.dir/main.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/main.cpp.obj.d"
->>>>>>> 7dba095637abb2292f7812685e74c74df6367925
+  "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj.d"
+  "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/Pomeowdoro_autogen/mocs_compilation.cpp" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/createaccount.cpp" "CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj.d"
+  "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/main.cpp" "CMakeFiles/Pomeowdoro.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/src/main.cpp.obj.d"
+  "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/pomoclock.cpp" "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

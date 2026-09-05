@@ -1,22 +1,500 @@
 QWidget {
-  background: #cdb4db;
-  color: #7f5539;
+  background: #6E2A45;
+  color: #5C5C5C;
   font-family: "Segoe UI";
 }
 
-QLineEdit {
-  background: #3c3c3c;
-  border-radius: 6px;
-  padding: 6px;
+#backButton {
+  background: transparent;
+  color: #FBE0E6;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 8px;
 }
 
-QPushButton {
-  background: #ff6b6b;
-  color: white;
+#backButton:hover {
+  color: #FFFFFF;
+}
+
+#welcomePanel {
+  background: #8E3B5A;
+  border-radius: 18px;
+}
+
+#catMark {
+  background: #FBE0E6;
+  color: #C23158;
+  border-radius: 28px;
+  font-size: 30px;
+  font-weight: 900;
+  min-width: 56px;
+  max-width: 56px;
+  min-height: 56px;
+  max-height: 56px;
+}
+
+#welcomeTitle {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+#welcomeText {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 14px;
+}
+
+#formPanel {
+  background: #FFF8FA;
+  border-radius: 18px;
+}
+
+#eyebrow {
+  background: transparent;
+  color: #C23158;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#caTitle {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#subtitle {
+  background: transparent;
+  color: #92717C;
+  font-size: 13px;
+}
+
+#fieldLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#formInput {
+  background: #FFFFFF;
+  color: #5C5C5C;
+  border: 1px solid #E8CBD4;
+  border-radius: 9px;
+  padding: 10px 12px;
+  min-height: 20px;
+  font-size: 13px;
+}
+
+#formInput:focus {
+  border: 2px solid #C23158;
+  padding: 9px 11px;
+}
+
+#formInput::placeholder {
+  color: #B99DA7;
+}
+
+#termsCheck {
+  background: transparent;
+  color: #92717C;
+  font-size: 11px;
+}
+
+#termsCheck::indicator {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #D8B4C0;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+#termsCheck::indicator:checked {
+  background: #C23158;
+  border-color: #C23158;
+}
+
+#primaryButton {
+  background: #C23158;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  min-height: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#primaryButton:hover {
+  background: #A9264A;
+}
+
+#primaryButton:pressed {
+  background: #8E203F;
+}
+
+#landingPage {
+  background: #6E2A45;
+}
+
+#logo {
+  background: #FBE0E6;
+  color: #C23158;
+  border-radius: 66px;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+#landingEyebrow {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#title {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+#landingTagline {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+#landingPrimaryButton,
+#landingSecondaryButton {
+  min-height: 22px;
+  border-radius: 11px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#landingPrimaryButton {
+  background: #FBE0E6;
+  color: #6E2A45;
+  border: 2px solid #FBE0E6;
+}
+
+#landingPrimaryButton:hover {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+#landingPrimaryButton:pressed {
+  background: #F4CBD3;
+  border-color: #F4CBD3;
+}
+
+#landingSecondaryButton {
+  background: transparent;
+  color: #FBE0E6;
+  border: 2px solid #B96A82;
+}
+
+#landingSecondaryButton:hover {
+  background: #8E3B5A;
+  border-color: #FBE0E6;
+}
+
+#landingSecondaryButton:pressed {
+  background: #7E304E;
+}
+
+#landingStatus {
+  background: transparent;
+  color: #DDAFBE;
+  font-size: 11px;
+}
+
+#clockEyebrow {
+  background: transparent;
+  color: #C23158;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#clockTitle {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#timerPanel,
+#settingsPanel {
+  border-radius: 18px;
+}
+
+#timerPanel {
+  background: #FFF8FA;
+}
+
+#settingsPanel {
+  background: #8E3B5A;
+}
+
+#phaseLabel {
+  background: #FBE0E6;
+  color: #C23158;
   border-radius: 8px;
-  padding: 8px 16px;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 6px 10px;
 }
 
-QPushButton:hover {
-  background: #ff8787;
+#timeLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+#timerProgress {
+  background: #F2DDE3;
+  border: none;
+  border-radius: 4px;
+  min-height: 8px;
+  max-height: 8px;
+}
+
+#timerProgress::chunk {
+  background: #C23158;
+  border-radius: 4px;
+}
+
+#statusLabel {
+  background: transparent;
+  color: #8E3B5A;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#totalTimeLabel {
+  background: transparent;
+  color: #B28B98;
+  font-size: 11px;
+}
+
+#settingsTitle {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+#settingsHint {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 12px;
+}
+
+#settingsPanel QFormLayout QLabel {
+  background: transparent;
+  color: #FBE0E6;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#settingsPanel QSpinBox {
+  background: #A95773;
+  color: #FFFFFF;
+  border: 1px solid #C47791;
+  border-radius: 8px;
+  padding: 7px 8px;
+  min-width: 78px;
+}
+
+#settingsPanel QSpinBox:focus {
+  border: 2px solid #FBE0E6;
+  padding: 6px 7px;
+}
+
+#clockPrimaryButton,
+#clockSecondaryButton {
+  border-radius: 8px;
+  padding: 9px 11px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#clockPrimaryButton {
+  background: #C23158;
+  color: #FFFFFF;
+  border: 1px solid #C23158;
+}
+
+#clockPrimaryButton:hover {
+  background: #A9264A;
+}
+
+#clockPrimaryButton:pressed {
+  background: #8E203F;
+}
+
+#clockSecondaryButton {
+  background: #FBE0E6;
+  color: #8E3B5A;
+  border: 1px solid #FBE0E6;
+}
+
+#clockSecondaryButton:hover {
+  background: #FFFFFF;
+}
+
+#clockSecondaryButton:pressed {
+  background: #F4CBD3;
+}
+
+#timerArea {
+  background: transparent;
+}
+
+#clockTitle {
+  color: #F7DCE4;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#phaseLabel {
+  background: transparent;
+  color: #DDAFBE;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#timeLabel {
+  color: #FFFFFF;
+  font-family: "Consolas";
+  font-size: 70px;
+  font-weight: 900;
+}
+
+#timerProgress {
+  background: #8E3B5A;
+  border: none;
+  border-radius: 3px;
+  min-height: 6px;
+  max-height: 6px;
+}
+
+#timerProgress::chunk {
+  background: #FBE0E6;
+  border-radius: 3px;
+}
+
+#totalTimeLabel {
+  color: #F7DCE4;
+  font-size: 12px;
+}
+
+#clockPrimaryButton,
+#clockSecondaryButton {
+  min-width: 68px;
+  max-width: 68px;
+  min-height: 68px;
+  max-height: 68px;
+  border-radius: 34px;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+#clockPrimaryButton {
+  background: #FBE0E6;
+  color: #6E2A45;
+  border: 3px solid #FBE0E6;
+}
+
+#clockPrimaryButton:hover {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+#clockPrimaryButton:pressed {
+  background: #F4CBD3;
+}
+
+#clockSecondaryButton {
+  background: transparent;
+  color: #FBE0E6;
+  border: 3px solid #FBE0E6;
+}
+
+#clockSecondaryButton:hover {
+  background: #8E3B5A;
+}
+
+#clockSecondaryButton:pressed {
+  background: #A95773;
+}
+
+#railIcon {
+  background: #8E3B5A;
+  color: #FBE0E6;
+  border: 1px solid #B96A82;
+  border-radius: 9px;
+  min-width: 74px;
+  max-width: 74px;
+  min-height: 42px;
+  max-height: 42px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  qproperty-alignment: AlignCenter;
+}
+
+#settingCard {
+  background: #FBE0E6;
+  border-radius: 18px;
+  min-height: 108px;
+}
+
+#settingLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#settingSpin {
+  background: transparent;
+  color: #6E2A45;
+  border: none;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+#settingSpin::up-button,
+#settingSpin::down-button {
+  background: #A95773;
+  border: none;
+  border-radius: 12px;
+  width: 24px;
+}
+
+#settingSpin::up-arrow,
+#settingSpin::down-arrow {
+  width: 8px;
+  height: 8px;
+}
+
+#skipBtn {
+  min-width: 74px;
+  max-width: 74px;
+  min-height: 34px;
+  max-height: 34px;
+  border-radius: 8px;
+  font-size: 11px;
 }

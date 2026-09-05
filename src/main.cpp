@@ -5,6 +5,7 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QFile>
+#include <QFrame>
 #include "createaccount.h"
 #include "pomoclock.h"
 
@@ -22,32 +23,52 @@ int main(int argc, char *argv[]) {
 
     // ---------- PAGE 0: Landing ----------
     QWidget *landingPage = new QWidget();
+    landingPage->setObjectName("landingPage");
 
-    QLabel *logo = new QLabel();
-    logo->setFixedSize(180, 180);
+    QLabel *logo = new QLabel("P");
+    logo->setFixedSize(132, 132);
     logo->setObjectName("logo");
     logo->setAlignment(Qt::AlignCenter);
 
-    QLabel *title = new QLabel("Pomeowdoro APP");
+    QLabel *eyebrow = new QLabel("A GENTLER WAY TO FOCUS");
+    eyebrow->setObjectName("landingEyebrow");
+    eyebrow->setAlignment(Qt::AlignCenter);
+
+    QLabel *title = new QLabel("Pomeowdoro");
     title->setObjectName("title");
     title->setAlignment(Qt::AlignCenter);
 
-    QPushButton *getStartedBtn = new QPushButton("Get start for free");
-    getStartedBtn->setObjectName("primaryButton");
+    QLabel *tagline = new QLabel(
+        "Focus in small, cozy sessions and make room\nfor the things you want to finish.");
+    tagline->setObjectName("landingTagline");
+    tagline->setAlignment(Qt::AlignCenter);
+    tagline->setWordWrap(true);
 
-    QPushButton *loginBtn = new QPushButton("Already have an account?");
-    loginBtn->setObjectName("primaryButton");
+    QPushButton *getStartedBtn = new QPushButton("Start a focus session");
+    getStartedBtn->setObjectName("landingPrimaryButton");
+
+    QPushButton *loginBtn = new QPushButton("I already have an account");
+    loginBtn->setObjectName("landingSecondaryButton");
+
+    QLabel *status = new QLabel("25 min focus  |  5 min rest  |  4 sessions");
+    status->setObjectName("landingStatus");
+    status->setAlignment(Qt::AlignCenter);
 
     QVBoxLayout *landingLayout = new QVBoxLayout();
-    landingLayout->addStretch();
     landingLayout->addWidget(logo, 0, Qt::AlignCenter);
+    landingLayout->addSpacing(12);
+    landingLayout->addWidget(eyebrow);
+    landingLayout->addSpacing(4);
     landingLayout->addWidget(title, 0, Qt::AlignCenter);
-    landingLayout->addSpacing(30);
+    landingLayout->addSpacing(8);
+    landingLayout->addWidget(tagline);
+    landingLayout->addSpacing(24);
     landingLayout->addWidget(getStartedBtn);
     landingLayout->addWidget(loginBtn);
-    landingLayout->addStretch();
-    landingLayout->setContentsMargins(100, 40, 100, 40);
-    landingLayout->setSpacing(16);
+    landingLayout->addSpacing(12);
+    landingLayout->addWidget(status);
+    landingLayout->setContentsMargins(120, 26, 120, 24);
+    landingLayout->setSpacing(10);
     landingPage->setLayout(landingLayout);
 
     // ---------- PAGE 1: Create Account ----------

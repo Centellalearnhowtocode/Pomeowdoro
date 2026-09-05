@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include <QSpinBox>
 #include <QTimer>
+#include <QProgressBar>
 
 class PomoClock : public QWidget {
     Q_OBJECT
@@ -27,8 +28,10 @@ private:
     void startPhase(Phase phase);
 
     QLabel *timeLabel;
+    QLabel *phaseLabel;
     QLabel *statusLabel;
     QLabel *totalTimeLabel;
+    QProgressBar *progressBar;
 
     QPushButton *startBtn;
     QPushButton *resetBtn;
