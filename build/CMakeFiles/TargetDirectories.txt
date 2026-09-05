@@ -1,8 +1,5 @@
 C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/Pomeowdoro.dir
-C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/PomeowdoroLogin.dir
 C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/edit_cache.dir
 C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/rebuild_cache.dir
 C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/Pomeowdoro_autogen_timestamp_deps.dir
 C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/Pomeowdoro_autogen.dir
-C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/PomeowdoroLogin_autogen_timestamp_deps.dir
-C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/PomeowdoroLogin_autogen.dir

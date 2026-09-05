@@ -388,6 +388,14 @@ CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qtmochelpers.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qtmocconstants.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/q20algorithm.h \
+ C:\Users\aDMIN\OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh\Desktop\Pomeowdoro\Pomeowdoro\build\Pomeowdoro_autogen\UVLADIE3JM/moc_notespage.cpp \
+ C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/notespage.h \
+ C:/Qt/6.11.2/mingw_64/include/QtSql/QSqlDatabase \
+ C:/Qt/6.11.2/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/Qt/6.11.2/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/Qt/6.11.2/mingw_64/include/QtSql/qtsql-config.h \
+ C:/Qt/6.11.2/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qmetaobject.h \
  C:\Users\aDMIN\OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh\Desktop\Pomeowdoro\Pomeowdoro\build\Pomeowdoro_autogen\UVLADIE3JM/moc_pomoclock.cpp \
  C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/pomoclock.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel \

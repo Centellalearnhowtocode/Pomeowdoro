@@ -129,19 +129,6 @@ Pomeowdoro/fast:
 .PHONY : Pomeowdoro/fast
 
 #=============================================================================
-# Target rules for targets named PomeowdoroLogin
-
-# Build rule for target.
-PomeowdoroLogin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PomeowdoroLogin
-.PHONY : PomeowdoroLogin
-
-# fast build rule for target.
-PomeowdoroLogin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin.dir\build.make CMakeFiles/PomeowdoroLogin.dir/build
-.PHONY : PomeowdoroLogin/fast
-
-#=============================================================================
 # Target rules for targets named Pomeowdoro_autogen_timestamp_deps
 
 # Build rule for target.
@@ -166,56 +153,6 @@ Pomeowdoro_autogen: cmake_check_build_system
 Pomeowdoro_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Pomeowdoro_autogen.dir\build.make CMakeFiles/Pomeowdoro_autogen.dir/build
 .PHONY : Pomeowdoro_autogen/fast
-
-#=============================================================================
-# Target rules for targets named PomeowdoroLogin_autogen_timestamp_deps
-
-# Build rule for target.
-PomeowdoroLogin_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PomeowdoroLogin_autogen_timestamp_deps
-.PHONY : PomeowdoroLogin_autogen_timestamp_deps
-
-# fast build rule for target.
-PomeowdoroLogin_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin_autogen_timestamp_deps.dir\build.make CMakeFiles/PomeowdoroLogin_autogen_timestamp_deps.dir/build
-.PHONY : PomeowdoroLogin_autogen_timestamp_deps/fast
-
-#=============================================================================
-# Target rules for targets named PomeowdoroLogin_autogen
-
-# Build rule for target.
-PomeowdoroLogin_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PomeowdoroLogin_autogen
-.PHONY : PomeowdoroLogin_autogen
-
-# fast build rule for target.
-PomeowdoroLogin_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin_autogen.dir\build.make CMakeFiles/PomeowdoroLogin_autogen.dir/build
-.PHONY : PomeowdoroLogin_autogen/fast
-
-PomeowdoroLogin_autogen/mocs_compilation.obj: PomeowdoroLogin_autogen/mocs_compilation.cpp.obj
-.PHONY : PomeowdoroLogin_autogen/mocs_compilation.obj
-
-# target to build an object file
-PomeowdoroLogin_autogen/mocs_compilation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin.dir\build.make CMakeFiles/PomeowdoroLogin.dir/PomeowdoroLogin_autogen/mocs_compilation.cpp.obj
-.PHONY : PomeowdoroLogin_autogen/mocs_compilation.cpp.obj
-
-PomeowdoroLogin_autogen/mocs_compilation.i: PomeowdoroLogin_autogen/mocs_compilation.cpp.i
-.PHONY : PomeowdoroLogin_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-PomeowdoroLogin_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin.dir\build.make CMakeFiles/PomeowdoroLogin.dir/PomeowdoroLogin_autogen/mocs_compilation.cpp.i
-.PHONY : PomeowdoroLogin_autogen/mocs_compilation.cpp.i
-
-PomeowdoroLogin_autogen/mocs_compilation.s: PomeowdoroLogin_autogen/mocs_compilation.cpp.s
-.PHONY : PomeowdoroLogin_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-PomeowdoroLogin_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin.dir\build.make CMakeFiles/PomeowdoroLogin.dir/PomeowdoroLogin_autogen/mocs_compilation.cpp.s
-.PHONY : PomeowdoroLogin_autogen/mocs_compilation.cpp.s
 
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.obj: Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj
 .PHONY : Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.obj
@@ -289,30 +226,6 @@ src/createaccount.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Pomeowdoro.dir\build.make CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.s
 .PHONY : src/createaccount.cpp.s
 
-src/login.obj: src/login.cpp.obj
-.PHONY : src/login.obj
-
-# target to build an object file
-src/login.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin.dir\build.make CMakeFiles/PomeowdoroLogin.dir/src/login.cpp.obj
-.PHONY : src/login.cpp.obj
-
-src/login.i: src/login.cpp.i
-.PHONY : src/login.i
-
-# target to preprocess a source file
-src/login.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin.dir\build.make CMakeFiles/PomeowdoroLogin.dir/src/login.cpp.i
-.PHONY : src/login.cpp.i
-
-src/login.s: src/login.cpp.s
-.PHONY : src/login.s
-
-# target to generate assembly for a file
-src/login.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PomeowdoroLogin.dir\build.make CMakeFiles/PomeowdoroLogin.dir/src/login.cpp.s
-.PHONY : src/login.cpp.s
-
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -336,6 +249,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Pomeowdoro.dir\build.make CMakeFiles/Pomeowdoro.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/notespage.obj: src/notespage.cpp.obj
+.PHONY : src/notespage.obj
+
+# target to build an object file
+src/notespage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Pomeowdoro.dir\build.make CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj
+.PHONY : src/notespage.cpp.obj
+
+src/notespage.i: src/notespage.cpp.i
+.PHONY : src/notespage.i
+
+# target to preprocess a source file
+src/notespage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Pomeowdoro.dir\build.make CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.i
+.PHONY : src/notespage.cpp.i
+
+src/notespage.s: src/notespage.cpp.s
+.PHONY : src/notespage.s
+
+# target to generate assembly for a file
+src/notespage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Pomeowdoro.dir\build.make CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.s
+.PHONY : src/notespage.cpp.s
 
 src/pomoclock.obj: src/pomoclock.cpp.obj
 .PHONY : src/pomoclock.obj
@@ -369,15 +306,9 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... PomeowdoroLogin_autogen
-	@echo ... PomeowdoroLogin_autogen_timestamp_deps
 	@echo ... Pomeowdoro_autogen
 	@echo ... Pomeowdoro_autogen_timestamp_deps
 	@echo ... Pomeowdoro
-	@echo ... PomeowdoroLogin
-	@echo ... PomeowdoroLogin_autogen/mocs_compilation.obj
-	@echo ... PomeowdoroLogin_autogen/mocs_compilation.i
-	@echo ... PomeowdoroLogin_autogen/mocs_compilation.s
 	@echo ... Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.obj
 	@echo ... Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.i
 	@echo ... Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.s
@@ -387,12 +318,12 @@ help:
 	@echo ... src/createaccount.obj
 	@echo ... src/createaccount.i
 	@echo ... src/createaccount.s
-	@echo ... src/login.obj
-	@echo ... src/login.i
-	@echo ... src/login.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/notespage.obj
+	@echo ... src/notespage.i
+	@echo ... src/notespage.s
 	@echo ... src/pomoclock.obj
 	@echo ... src/pomoclock.i
 	@echo ... src/pomoclock.s

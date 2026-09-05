@@ -40,22 +40,31 @@ template <> constexpr inline auto PomoClock::qt_create_metaobjectdata<qt_meta_ta
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "PomoClock",
-        "onStartClicked",
+        "notesClicked",
         "",
+        "logoutClicked",
+        "onSettingsClicked",
+        "onStartClicked",
         "onResetClicked",
         "onSkipClicked",
         "tick"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'onStartClicked'
-        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onResetClicked'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onSkipClicked'
+        // Signal 'notesClicked'
+        QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'logoutClicked'
+        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'onSettingsClicked'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'tick'
+        // Slot 'onStartClicked'
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onResetClicked'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onSkipClicked'
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'tick'
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -79,14 +88,22 @@ void PomoClock::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     auto *_t = static_cast<PomoClock *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->onStartClicked(); break;
-        case 1: _t->onResetClicked(); break;
-        case 2: _t->onSkipClicked(); break;
-        case 3: _t->tick(); break;
+        case 0: _t->notesClicked(); break;
+        case 1: _t->logoutClicked(); break;
+        case 2: _t->onSettingsClicked(); break;
+        case 3: _t->onStartClicked(); break;
+        case 4: _t->onResetClicked(); break;
+        case 5: _t->onSkipClicked(); break;
+        case 6: _t->tick(); break;
         default: ;
         }
     }
-    (void)_a;
+    if (_c == QMetaObject::IndexOfMethod) {
+        if (QtMocHelpers::indexOfMethod<void (PomoClock::*)()>(_a, &PomoClock::notesClicked, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (PomoClock::*)()>(_a, &PomoClock::logoutClicked, 1))
+            return;
+    }
 }
 
 const QMetaObject *PomoClock::metaObject() const
@@ -108,15 +125,27 @@ int PomoClock::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 7;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 7;
     }
     return _id;
+}
+
+// SIGNAL 0
+void PomoClock::notesClicked()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void PomoClock::logoutClicked()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP

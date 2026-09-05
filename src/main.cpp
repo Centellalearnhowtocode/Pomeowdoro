@@ -8,6 +8,7 @@
 #include <QFrame>
 #include "createaccount.h"
 #include "pomoclock.h"
+#include "notespage.h"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
@@ -72,23 +73,29 @@ int main(int argc, char *argv[]) {
     landingPage->setLayout(landingLayout);
 
     // ---------- PAGE 1: Create Account ----------
-    CreateAccountPage *createAccountPage = new CreateAccountPage();
+    CreateAccountPage *createAccountPage = new CreateAccountPage(false);
+    CreateAccountPage *loginPage = new CreateAccountPage(true);
 
     // ---------- PAGE 2: Clock ----------
     PomoClock *clockPage = new PomoClock();
 
+    // ---------- PAGE 3: Notes ----------
+    NotesPage *notesPage = new NotesPage();
+
     // ---------- Add pages to stack ----------
     stack->addWidget(landingPage);        // index 0
     stack->addWidget(createAccountPage);  // index 1
+    stack->addWidget(loginPage);          // index 2
     stack->addWidget(clockPage);          // index 2
+    stack->addWidget(notesPage);          // index 4
 
     // ---------- Wiring ----------
     QObject::connect(getStartedBtn, &QPushButton::clicked, [=]() {
-        stack->setCurrentWidget(clockPage);
+        stack->setCurrentWidget(createAccountPage);
     });
 
     QObject::connect(loginBtn, &QPushButton::clicked, [=]() {
-        stack->setCurrentWidget(createAccountPage);
+        stack->setCurrentWidget(loginPage);
     });
 
     QObject::connect(createAccountPage, &CreateAccountPage::backClicked, [=]() {
@@ -97,6 +104,26 @@ int main(int argc, char *argv[]) {
 
     QObject::connect(createAccountPage, &CreateAccountPage::accountCreated, [=]() {
         stack->setCurrentWidget(clockPage);
+    });
+
+    QObject::connect(loginPage, &CreateAccountPage::backClicked, [=]() {
+        stack->setCurrentWidget(landingPage);
+    });
+
+    QObject::connect(loginPage, &CreateAccountPage::accountCreated, [=]() {
+        stack->setCurrentWidget(clockPage);
+    });
+
+    QObject::connect(clockPage, &PomoClock::notesClicked, [=]() {
+        stack->setCurrentWidget(notesPage);
+    });
+
+    QObject::connect(notesPage, &NotesPage::backClicked, [=]() {
+        stack->setCurrentWidget(clockPage);
+    });
+
+    QObject::connect(clockPage, &PomoClock::logoutClicked, [=]() {
+        stack->setCurrentWidget(landingPage);
     });
 
     stack->show();

@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/Pomeowdoro_autogen/mocs_compilation.cpp" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj.d"
   "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/createaccount.cpp" "CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj.d"
   "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/main.cpp" "CMakeFiles/Pomeowdoro.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/src/main.cpp.obj.d"
+  "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/notespage.cpp" "CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj.d"
   "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/pomoclock.cpp" "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj" "gcc" "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj.d"
   )
 

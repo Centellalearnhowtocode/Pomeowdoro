@@ -78,6 +78,8 @@ Pomeowdoro_autogen/timestamp: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/resources.qrc
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: CMakeFiles/Pomeowdoro_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/style.qss
+Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/minus.svg
+Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/plus.svg
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Qt/6.11.2/mingw_64/bin/rcc.exe
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Qt/6.11.2/mingw_64/bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for src/resources.qrc"
@@ -113,26 +115,11 @@ CMakeFiles/Pomeowdoro.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/src/main.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\main.cpp" -o CMakeFiles\Pomeowdoro.dir\src\main.cpp.s
 
-CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
-CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
-CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/createaccount.cpp
-CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\src\createaccount.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\src\createaccount.cpp.obj -c "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\createaccount.cpp"
-
-CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\createaccount.cpp" > CMakeFiles\Pomeowdoro.dir\src\createaccount.cpp.i
-
-CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\createaccount.cpp" -o CMakeFiles\Pomeowdoro.dir\src\createaccount.cpp.s
-
 CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
 CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
 CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/pomoclock.cpp
 CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\src\pomoclock.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\src\pomoclock.cpp.obj -c "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\pomoclock.cpp"
 
 CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.i: cmake_force
@@ -143,11 +130,41 @@ CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\pomoclock.cpp" -o CMakeFiles\Pomeowdoro.dir\src\pomoclock.cpp.s
 
+CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
+CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
+CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/notespage.cpp
+CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\src\notespage.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\src\notespage.cpp.obj -c "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\notespage.cpp"
+
+CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\notespage.cpp" > CMakeFiles\Pomeowdoro.dir\src\notespage.cpp.i
+
+CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\notespage.cpp" -o CMakeFiles\Pomeowdoro.dir\src\notespage.cpp.s
+
+CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
+CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
+CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/createaccount.cpp
+CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\src\createaccount.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\src\createaccount.cpp.obj -c "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\createaccount.cpp"
+
+CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\createaccount.cpp" > CMakeFiles\Pomeowdoro.dir\src\createaccount.cpp.i
+
+CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\src\createaccount.cpp" -o CMakeFiles\Pomeowdoro.dir\src\createaccount.cpp.s
+
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj: Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj -MF CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\UVLADIE3JM\qrc_resources.cpp.obj.d -o CMakeFiles\Pomeowdoro.dir\Pomeowdoro_autogen\UVLADIE3JM\qrc_resources.cpp.obj -c "C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\Pomeowdoro_autogen\UVLADIE3JM\qrc_resources.cpp"
 
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.i: cmake_force
@@ -162,8 +179,9 @@ CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.s: cma
 Pomeowdoro_OBJECTS = \
 "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/Pomeowdoro.dir/src/main.cpp.obj" \
-"CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj" \
 "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj" \
+"CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj" \
+"CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj" \
 "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj"
 
 # External object files for target Pomeowdoro
@@ -171,17 +189,19 @@ Pomeowdoro_EXTERNAL_OBJECTS =
 
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/src/main.cpp.obj
-Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj
+Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj
+Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/build.make
 Pomeowdoro.exe: C:/Qt/6.11.2/mingw_64/lib/libQt6Widgets.a
+Pomeowdoro.exe: C:/Qt/6.11.2/mingw_64/lib/libQt6Sql.a
 Pomeowdoro.exe: C:/Qt/6.11.2/mingw_64/lib/libQt6Gui.a
 Pomeowdoro.exe: C:/Qt/6.11.2/mingw_64/lib/libQt6Core.a
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/linkLibs.rsp
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/objects1.rsp
 Pomeowdoro.exe: CMakeFiles/Pomeowdoro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Pomeowdoro.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Pomeowdoro.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Pomeowdoro.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

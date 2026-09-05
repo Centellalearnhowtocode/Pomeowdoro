@@ -3,6 +3,8 @@
 #include <QHBoxLayout>
 #include <QFormLayout>
 #include <QFrame>
+#include <QDialog>
+#include <QDialogButtonBox>
 
 PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     workSpin = new QSpinBox();
@@ -51,7 +53,9 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     resetBtn = new QPushButton("↻");
     resetBtn->setObjectName("clockSecondaryButton");
     skipBtn = new QPushButton("Skip");
-    skipBtn->setObjectName("clockSecondaryButton");
+    skipBtn->setObjectName("skipButton");
+    QPushButton *logoutBtn = new QPushButton("LOG OUT");
+    logoutBtn->setObjectName("railIcon");
 
     QHBoxLayout *buttonLayout = new QHBoxLayout();
     buttonLayout->setSpacing(18);
@@ -74,20 +78,21 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     };
 
     QWidget *timerArea = new QWidget();
-    timerArea->setObjectName("timerArea");
+    timerArea->setObjectName("timerPanel");
     QVBoxLayout *timerLayout = new QVBoxLayout(timerArea);
     timerLayout->addWidget(phaseLabel);
     timerLayout->addWidget(timeLabel);
     timerLayout->addWidget(progressBar);
+    timerLayout->addWidget(statusLabel);
     timerLayout->addWidget(totalTimeLabel);
     timerLayout->addSpacing(8);
     timerLayout->addLayout(buttonLayout);
-    timerLayout->setContentsMargins(0, 0, 0, 0);
-    timerLayout->setSpacing(6);
+    timerLayout->setContentsMargins(26, 20, 26, 22);
+    timerLayout->setSpacing(8);
 
-    QLabel *settingsIcon = new QLabel("SETTINGS");
+    QPushButton *settingsIcon = new QPushButton("SETTINGS");
     settingsIcon->setObjectName("railIcon");
-    QLabel *notesIcon = new QLabel("NOTES");
+    QPushButton *notesIcon = new QPushButton("NOTES");
     notesIcon->setObjectName("railIcon");
     QLabel *statsIcon = new QLabel("STATS");
     statsIcon->setObjectName("railIcon");
@@ -97,6 +102,7 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     railLayout->addWidget(notesIcon);
     railLayout->addWidget(statsIcon);
     railLayout->addWidget(skipBtn);
+    railLayout->addWidget(logoutBtn);
     railLayout->addStretch();
     railLayout->setSpacing(14);
 
@@ -123,16 +129,68 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     setLayout(mainLayout);
 
     timer = new QTimer(this);
+    timer->setInterval(1000);
     connect(timer, &QTimer::timeout, this, &PomoClock::tick);
 
+    connect(settingsIcon, &QPushButton::clicked, this, &PomoClock::onSettingsClicked);
     connect(startBtn, &QPushButton::clicked, this, &PomoClock::onStartClicked);
     connect(resetBtn, &QPushButton::clicked, this, &PomoClock::onResetClicked);
     connect(skipBtn, &QPushButton::clicked, this, &PomoClock::onSkipClicked);
+    connect(notesIcon, &QPushButton::clicked, this, &PomoClock::notesClicked);
+    connect(logoutBtn, &QPushButton::clicked, this, &PomoClock::logoutClicked);
 
     secondsRemaining = workSpin->value() * 60;
     updateTimeLabel();
     updateStatusLabel();
     startPhase(Phase::Work);
+}
+
+void PomoClock::onSettingsClicked() {
+    QDialog dialog(this);
+    dialog.setWindowTitle("Pomeowdoro Settings");
+    dialog.setObjectName("settingsDialog");
+    dialog.setModal(true);
+
+    auto *focusSpin = new QSpinBox(&dialog);
+    focusSpin->setRange(1, 180);
+    focusSpin->setValue(workSpin->value());
+    focusSpin->setSuffix(" min");
+
+    auto *breakLengthSpin = new QSpinBox(&dialog);
+    breakLengthSpin->setRange(1, 60);
+    breakLengthSpin->setValue(breakSpin->value());
+    breakLengthSpin->setSuffix(" min");
+
+    auto *sessionsSpin = new QSpinBox(&dialog);
+    sessionsSpin->setRange(1, 20);
+    sessionsSpin->setValue(sessionSpin->value());
+    sessionsSpin->setSuffix(" sessions");
+
+    auto *form = new QFormLayout();
+    form->addRow("Focus length", focusSpin);
+    form->addRow("Break length", breakLengthSpin);
+    form->addRow("Number of sessions", sessionsSpin);
+
+    auto *buttons = new QDialogButtonBox(
+        QDialogButtonBox::Ok | QDialogButtonBox::Cancel, &dialog);
+    connect(buttons, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+    connect(buttons, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
+
+    auto *layout = new QVBoxLayout(&dialog);
+    layout->addWidget(new QLabel("Adjust your focus routine"));
+    layout->addLayout(form);
+    layout->addWidget(buttons);
+    dialog.setLayout(layout);
+
+    if (dialog.exec() == QDialog::Accepted) {
+        workSpin->setValue(focusSpin->value());
+        breakSpin->setValue(breakLengthSpin->value());
+        sessionSpin->setValue(sessionsSpin->value());
+        timer->stop();
+        running = false;
+        startBtn->setText("> ");
+        startPhase(currentPhase);
+    }
 }
 
 void PomoClock::startPhase(Phase phase) {
@@ -150,16 +208,17 @@ void PomoClock::startPhase(Phase phase) {
 }
 
 void PomoClock::onStartClicked() {
-    if (running) {
+    if (timer->isActive()) {
         // pause
         timer->stop();
         running = false;
         startBtn->setText("> ");
     } else {
         // start/resume
-        timer->start(1000);
+        timer->start();
         running = true;
         startBtn->setText("||");
+        tick();
     }
 }
 

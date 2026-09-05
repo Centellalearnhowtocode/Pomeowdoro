@@ -9,7 +9,9 @@
 	"INCLUDE_DIR" : "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/Pomeowdoro_autogen/include",
 	"INPUTS" : 
 	[
-		"C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/style.qss"
+		"C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/style.qss",
+		"C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/minus.svg",
+		"C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/src/plus.svg"
 	],
 	"LOCK_FILE" : "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutoRcc_resources_UVLADIE3JM_Lock.lock",
 	"MULTI_CONFIG" : false,

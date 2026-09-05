@@ -14,7 +14,12 @@ class PomoClock : public QWidget {
 public:
     explicit PomoClock(QWidget *parent = nullptr);
 
+signals:
+    void notesClicked();
+    void logoutClicked();
+
 private slots:
+    void onSettingsClicked();
     void onStartClicked();
     void onResetClicked();
     void onSkipClicked();

@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj.d"
   "CMakeFiles/Pomeowdoro.dir/src/main.cpp.obj"
   "CMakeFiles/Pomeowdoro.dir/src/main.cpp.obj.d"
+  "CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj"
+  "CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj.d"
   "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj"
   "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj.d"
   "Pomeowdoro.exe"

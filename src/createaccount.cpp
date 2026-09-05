@@ -7,7 +7,7 @@
 #include <QCheckBox>
 #include <QFrame>
 
-CreateAccountPage::CreateAccountPage(QWidget *parent) : QWidget(parent) {
+CreateAccountPage::CreateAccountPage(bool loginMode, QWidget *parent) : QWidget(parent) {
     QPushButton *backBtn = new QPushButton("<  Back");
     backBtn->setObjectName("backButton");
 
@@ -42,13 +42,15 @@ CreateAccountPage::CreateAccountPage(QWidget *parent) : QWidget(parent) {
     QWidget *formPanel = new QWidget();
     formPanel->setObjectName("formPanel");
 
-    QLabel *eyebrow = new QLabel("START YOUR FOCUS JOURNEY");
+    QLabel *eyebrow = new QLabel(loginMode ? "WELCOME BACK" : "START YOUR FOCUS JOURNEY");
     eyebrow->setObjectName("eyebrow");
 
-    QLabel *title = new QLabel("Create account");
+    QLabel *title = new QLabel(loginMode ? "Log in" : "Create account");
     title->setObjectName("caTitle");
 
-    QLabel *subtitle = new QLabel("Your cozy workspace is one step away.");
+    QLabel *subtitle = new QLabel(loginMode
+        ? "Sign in to return to your focus workspace."
+        : "Your cozy workspace is one step away.");
     subtitle->setObjectName("subtitle");
     subtitle->setWordWrap(true);
 
@@ -68,7 +70,7 @@ CreateAccountPage::CreateAccountPage(QWidget *parent) : QWidget(parent) {
     QCheckBox *agreeCheck = new QCheckBox("I agree to the Terms of Use and Privacy");
     agreeCheck->setObjectName("termsCheck");
 
-    QPushButton *createBtn = new QPushButton("Create Account");
+    QPushButton *createBtn = new QPushButton(loginMode ? "Log in" : "Create Account");
     createBtn->setObjectName("primaryButton");
 
     QVBoxLayout *formLayout = new QVBoxLayout(formPanel);
@@ -83,8 +85,10 @@ CreateAccountPage::CreateAccountPage(QWidget *parent) : QWidget(parent) {
     formLayout->addWidget(pwLabel);
     formLayout->addWidget(pwInput);
     formLayout->addSpacing(10);
-    formLayout->addWidget(agreeCheck);
-    formLayout->addSpacing(16);
+    if (!loginMode) {
+        formLayout->addWidget(agreeCheck);
+        formLayout->addSpacing(16);
+    }
     formLayout->addWidget(createBtn);
     formLayout->setContentsMargins(32, 28, 32, 28);
 

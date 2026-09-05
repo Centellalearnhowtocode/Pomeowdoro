@@ -309,7 +309,7 @@ QWidget {
 #settingsPanel QSpinBox {
   background: #A95773;
   color: #FFFFFF;
-  border: 1px solid #C47791;
+  border: 1px solid #b07186;
   border-radius: 8px;
   padding: 7px 8px;
   min-width: 78px;
@@ -356,33 +356,37 @@ QWidget {
   background: #F4CBD3;
 }
 
-#timerArea {
-  background: transparent;
+#timerPanel {
+  background: #FFF8FA;
+  border-radius: 22px;
+  min-height: 310px;
 }
 
 #clockTitle {
-  color: #F7DCE4;
-  font-size: 28px;
+  color: #FFFFFF;
+  font-size: 30px;
   font-weight: 800;
 }
 
 #phaseLabel {
-  background: transparent;
-  color: #DDAFBE;
+  background: #FBE0E6;
+  color: #C23158;
+  border-radius: 8px;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 1px;
+  padding: 6px 10px;
 }
 
 #timeLabel {
-  color: #FFFFFF;
+  color: #6E2A45;
   font-family: "Consolas";
-  font-size: 70px;
+  font-size: 64px;
   font-weight: 900;
 }
 
 #timerProgress {
-  background: #8E3B5A;
+  background: #F2DDE3;
   border: none;
   border-radius: 3px;
   min-height: 6px;
@@ -390,13 +394,20 @@ QWidget {
 }
 
 #timerProgress::chunk {
-  background: #FBE0E6;
+  background: #C23158;
   border-radius: 3px;
 }
 
 #totalTimeLabel {
-  color: #F7DCE4;
+  color: #B28B98;
   font-size: 12px;
+}
+
+#statusLabel {
+  background: transparent;
+  color: #8E3B5A;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 #clockPrimaryButton,
@@ -412,32 +423,32 @@ QWidget {
 }
 
 #clockPrimaryButton {
-  background: #FBE0E6;
-  color: #6E2A45;
-  border: 3px solid #FBE0E6;
+  background: #C23158;
+  color: #FFFFFF;
+  border: 3px solid #C23158;
 }
 
 #clockPrimaryButton:hover {
-  background: #FFFFFF;
-  border-color: #FFFFFF;
+  background: #A9264A;
+  border-color: #A9264A;
 }
 
 #clockPrimaryButton:pressed {
-  background: #F4CBD3;
+  background: #8E203F;
 }
 
 #clockSecondaryButton {
   background: transparent;
-  color: #FBE0E6;
-  border: 3px solid #FBE0E6;
+  color: #C23158;
+  border: 3px solid #E2A6B7;
 }
 
 #clockSecondaryButton:hover {
-  background: #8E3B5A;
+  background: #FBE0E6;
 }
 
 #clockSecondaryButton:pressed {
-  background: #A95773;
+  background: #F4CBD3;
 }
 
 #railIcon {
@@ -455,10 +466,54 @@ QWidget {
   qproperty-alignment: AlignCenter;
 }
 
+#railIcon:hover {
+  background: #A95773;
+  border-color: #FBE0E6;
+}
+
+#railIcon:pressed {
+  background: #C23158;
+}
+
+#settingsDialog {
+  background: #FFF8FA;
+  color: #6E2A45;
+}
+
+#settingsDialog QLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#settingsDialog QSpinBox {
+  background: #FFFFFF;
+  color: #6E2A45;
+  border: 1px solid #E8CBD4;
+  border-radius: 8px;
+  padding: 7px;
+  min-width: 105px;
+}
+
+#settingsDialog QDialogButtonBox QPushButton {
+  background: #FBE0E6;
+  color: #8E3B5A;
+  border: 1px solid #E2A6B7;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 800;
+}
+
+#settingsDialog QDialogButtonBox QPushButton:hover {
+  background: #C23158;
+  color: #FFFFFF;
+}
+
 #settingCard {
   background: #FBE0E6;
   border-radius: 18px;
-  min-height: 108px;
+  min-height: 102px;
 }
 
 #settingLabel {
@@ -474,20 +529,62 @@ QWidget {
   border: none;
   font-size: 28px;
   font-weight: 900;
+  padding-right: 28px;
 }
 
 #settingSpin::up-button,
 #settingSpin::down-button {
-  background: #A95773;
-  border: none;
-  border-radius: 12px;
-  width: 24px;
+  background: #B45A77;
+  border: 1px solid #C9829A;
+  width: 25px;
+  height: 20px;
+  subcontrol-origin: border;
+  subcontrol-position: top right;
 }
 
-#settingSpin::up-arrow,
+#settingSpin::down-button {
+  subcontrol-position: bottom right;
+}
+
+#settingSpin::up-arrow {
+  image: url(:/plus.svg);
+  width: 12px;
+  height: 12px;
+}
+
 #settingSpin::down-arrow {
-  width: 8px;
-  height: 8px;
+  image: url(:/minus.svg);
+  width: 12px;
+  height: 12px;
+}
+
+#settingSpin::up-button:hover,
+#settingSpin::down-button:hover {
+  background: #C23158;
+}
+
+#skipButton {
+  background: #8E3B5A;
+  color: #FBE0E6;
+  border: 1px solid #B96A82;
+  min-width: 74px;
+  max-width: 74px;
+  min-height: 42px;
+  max-height: 42px;
+  border-radius: 9px;
+  padding: 0;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#skipButton:hover {
+  background: #A95773;
+  border-color: #FBE0E6;
+}
+
+#skipButton:pressed {
+  background: #C23158;
 }
 
 #skipBtn {
@@ -497,4 +594,189 @@ QWidget {
   max-height: 34px;
   border-radius: 8px;
   font-size: 11px;
+}
+
+#notesPage {
+  background: #6E2A45;
+}
+
+#notesTitle {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#notesSubtitle,
+#notesStatus {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 12px;
+}
+
+#notesStatus {
+  color: #B98A9B;
+  min-height: 18px;
+}
+
+#notesListPanel,
+#notesEditorPanel {
+  background: #FFF8FA;
+  border-radius: 16px;
+}
+
+#notesListPanel {
+  min-width: 220px;
+}
+
+#notesEditorPanel {
+  min-width: 390px;
+}
+
+#notesSectionTitle {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#notesEmptyState {
+  background: #FBE0E6;
+  color: #B2788B;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+#notesList {
+  background: #FBE0E6;
+  color: #6E2A45;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+#notesList:focus {
+  outline: none;
+  border: 1px solid #E8CBD4;
+}
+
+#notesList::item {
+  padding: 12px 10px;
+  border-radius: 7px;
+}
+
+#notesList::item:selected {
+  background: #C23158;
+  color: #FFFFFF;
+}
+
+#notesEditorPanel QLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#notesEditorPanel #notesStatus {
+  color: #B98A9B;
+  font-weight: 400;
+}
+
+#notesInput,
+#notesEditor {
+  background: #FFFFFF;
+  color: #5C5C5C;
+  border: 1px solid #E8CBD4;
+  border-radius: 9px;
+  padding: 9px;
+  font-size: 13px;
+}
+
+#notesInput:focus,
+#notesEditor:focus {
+  border: 2px solid #C23158;
+}
+
+#notesEditor {
+  min-height: 128px;
+}
+
+#notesPrimaryButton,
+#notesSecondaryButton,
+#notesDangerButton {
+  border-radius: 8px;
+  padding: 9px 13px;
+  min-height: 18px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#notesPrimaryButton {
+  background: #C23158;
+  color: #FFFFFF;
+  border: 1px solid #C23158;
+}
+
+#notesSecondaryButton {
+  background: #FBE0E6;
+  color: #8E3B5A;
+  border: 1px solid #FBE0E6;
+}
+
+#notesDangerButton {
+  background: transparent;
+  color: #A9264A;
+  border: 1px solid #E1A7B7;
+}
+
+#notesPrimaryButton:hover,
+#notesSecondaryButton:hover,
+#notesDangerButton:hover {
+  background: #FFFFFF;
+}
+
+/* Final clock layout overrides */
+#timerPanel {
+  background: #FFF8FA;
+  border-radius: 22px;
+  min-height: 310px;
+}
+
+#timeLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-family: "Consolas";
+  font-size: 64px;
+  font-weight: 900;
+  min-height: 78px;
+}
+
+#phaseLabel {
+  background: #FBE0E6;
+  color: #C23158;
+}
+
+#statusLabel {
+  background: transparent;
+  color: #8E3B5A;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#skipButton {
+  background: #8E3B5A;
+  color: #FBE0E6;
+  border: 1px solid #B96A82;
+  min-width: 74px;
+  max-width: 74px;
+  min-height: 42px;
+  max-height: 42px;
+  border-radius: 9px;
+  padding: 0;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
