@@ -5,6 +5,7 @@
 #include <QFrame>
 #include <QDialog>
 #include <QDialogButtonBox>
+#include <QMovie>
 
 PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     workSpin = new QSpinBox();
@@ -34,16 +35,27 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     timeLabel->setObjectName("timeLabel");
     timeLabel->setAlignment(Qt::AlignCenter);
 
+    QLabel *catAnimation = new QLabel();
+catAnimation->setObjectName("catAnimation");
+catAnimation->setAlignment(Qt::AlignCenter);
+catAnimation->setFixedSize(80, 80); // adjust size to taste
+
+QMovie *catMovie = new QMovie(":/image/scuba-cat.gif");
+catAnimation->setMovie(catMovie);
+catMovie->start();
+    qDebug() << "Cat gif loaded:" << catMovie->isValid();
+
     statusLabel = new QLabel("Session 1 of 3");
     statusLabel->setObjectName("statusLabel");
     statusLabel->setAlignment(Qt::AlignCenter);
 
-    progressBar = new QProgressBar();
+        progressBar = new QProgressBar();
     progressBar->setObjectName("timerProgress");
     progressBar->setRange(0, 1500);
     progressBar->setValue(0);
     progressBar->setTextVisible(false);
 
+totalTimeLabel = new QLabel("Total time today: 00:00:00");
     totalTimeLabel = new QLabel("Total time today: 00:00:00");
     totalTimeLabel->setObjectName("totalTimeLabel");
     totalTimeLabel->setAlignment(Qt::AlignCenter);
@@ -105,9 +117,11 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     QVBoxLayout *timerLayout = new QVBoxLayout(timerArea);
     timerLayout->addWidget(phaseLabel);
     timerLayout->addWidget(timeLabel);
+    timerLayout->addWidget(catAnimation, 0, Qt::AlignCenter);
     timerLayout->addWidget(progressBar);
     timerLayout->addWidget(statusLabel);
     timerLayout->addWidget(totalTimeLabel);
+
     timerLayout->addSpacing(8);
     timerLayout->addLayout(buttonLayout);
     timerLayout->setContentsMargins(26, 20, 26, 22);

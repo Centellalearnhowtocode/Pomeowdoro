@@ -3,5 +3,7 @@
         <file>style.qss</file>
         <file>plus.svg</file>
         <file>minus.svg</file>
+        <file>../image/cat.png</file>
+        <file>../image/scuba-cat.gif</file>
     </qresource>
 </RCC>

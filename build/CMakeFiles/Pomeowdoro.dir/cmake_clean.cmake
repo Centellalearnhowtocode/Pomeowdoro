@@ -1,7 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Pomeowdoro_autogen.dir/AutogenUsed.txt"
-  "CMakeFiles/Pomeowdoro_autogen.dir/ParseCache.txt"
-  "Pomeowdoro_autogen"
   "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj"
   "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp.obj.d"
   "CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj"
@@ -14,6 +11,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pomeowdoro.dir/src/notespage.cpp.obj.d"
   "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj"
   "CMakeFiles/Pomeowdoro.dir/src/pomoclock.cpp.obj.d"
+  "CMakeFiles/Pomeowdoro_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/Pomeowdoro_autogen.dir/ParseCache.txt"
+  "Pomeowdoro_autogen"
   "Pomeowdoro.exe"
   "Pomeowdoro.exe.manifest"
   "Pomeowdoro.pdb"

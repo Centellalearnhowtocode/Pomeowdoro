@@ -26,12 +26,15 @@ int main(int argc, char *argv[]) {
     QWidget *landingPage = new QWidget();
     landingPage->setObjectName("landingPage");
 
-    QLabel *logo = new QLabel("P");
+    QLabel *logo = new QLabel();
     logo->setFixedSize(132, 132);
     logo->setObjectName("logo");
     logo->setAlignment(Qt::AlignCenter);
 
-    QLabel *eyebrow = new QLabel("A GENTLER WAY TO FOCUS");
+    QPixmap catPixmap(":/image/cat.png");
+    logo->setPixmap(catPixmap.scaled(logo->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+
+    QLabel *eyebrow = new QLabel("Get cozy and focused.");
     eyebrow->setObjectName("landingEyebrow");
     eyebrow->setAlignment(Qt::AlignCenter);
 
@@ -40,7 +43,7 @@ int main(int argc, char *argv[]) {
     title->setAlignment(Qt::AlignCenter);
 
     QLabel *tagline = new QLabel(
-        "Focus in small, cozy sessions and make room\nfor the things you want to finish.");
+        "Focus with your favorite felin friends. ");
     tagline->setObjectName("landingTagline");
     tagline->setAlignment(Qt::AlignCenter);
     tagline->setWordWrap(true);
