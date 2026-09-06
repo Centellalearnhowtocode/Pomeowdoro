@@ -5,8 +5,10 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QFile>
+#include <QFrame>
 #include "createaccount.h"
 #include "pomoclock.h"
+#include "notespage.h"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
@@ -22,60 +24,108 @@ int main(int argc, char *argv[]) {
 
     // ---------- PAGE 0: Landing ----------
     QWidget *landingPage = new QWidget();
+    landingPage->setObjectName("landingPage");
 
-    QLabel *logo = new QLabel();
-    logo->setFixedSize(180, 180);
+    QLabel *logo = new QLabel("P");
+    logo->setFixedSize(132, 132);
     logo->setObjectName("logo");
     logo->setAlignment(Qt::AlignCenter);
 
-    QLabel *title = new QLabel("Pomeowdoro APP");
+    QLabel *eyebrow = new QLabel("A GENTLER WAY TO FOCUS");
+    eyebrow->setObjectName("landingEyebrow");
+    eyebrow->setAlignment(Qt::AlignCenter);
+
+    QLabel *title = new QLabel("Pomeowdoro");
     title->setObjectName("title");
     title->setAlignment(Qt::AlignCenter);
 
-    QPushButton *getStartedBtn = new QPushButton("Get start for free");
-    getStartedBtn->setObjectName("primaryButton");
+    QLabel *tagline = new QLabel(
+        "Focus in small, cozy sessions and make room\nfor the things you want to finish.");
+    tagline->setObjectName("landingTagline");
+    tagline->setAlignment(Qt::AlignCenter);
+    tagline->setWordWrap(true);
 
-    QPushButton *loginBtn = new QPushButton("Already have an account?");
-    loginBtn->setObjectName("primaryButton");
+    QPushButton *getStartedBtn = new QPushButton("Start a focus session");
+    getStartedBtn->setObjectName("landingPrimaryButton");
+
+    QPushButton *loginBtn = new QPushButton("I already have an account");
+    loginBtn->setObjectName("landingSecondaryButton");
+
+    QLabel *status = new QLabel("25 min focus  |  5 min rest  |  4 sessions");
+    status->setObjectName("landingStatus");
+    status->setAlignment(Qt::AlignCenter);
 
     QVBoxLayout *landingLayout = new QVBoxLayout();
-    landingLayout->addStretch();
     landingLayout->addWidget(logo, 0, Qt::AlignCenter);
+    landingLayout->addSpacing(12);
+    landingLayout->addWidget(eyebrow);
+    landingLayout->addSpacing(4);
     landingLayout->addWidget(title, 0, Qt::AlignCenter);
-    landingLayout->addSpacing(30);
+    landingLayout->addSpacing(8);
+    landingLayout->addWidget(tagline);
+    landingLayout->addSpacing(24);
     landingLayout->addWidget(getStartedBtn);
     landingLayout->addWidget(loginBtn);
-    landingLayout->addStretch();
-    landingLayout->setContentsMargins(100, 40, 100, 40);
-    landingLayout->setSpacing(16);
+    landingLayout->addSpacing(12);
+    landingLayout->addWidget(status);
+    landingLayout->setContentsMargins(120, 26, 120, 24);
+    landingLayout->setSpacing(10);
     landingPage->setLayout(landingLayout);
 
     // ---------- PAGE 1: Create Account ----------
-    CreateAccountPage *createAccountPage = new CreateAccountPage();
+    CreateAccountPage *createAccountPage = new CreateAccountPage(false);
+    CreateAccountPage *loginPage = new CreateAccountPage(true);
 
     // ---------- PAGE 2: Clock ----------
     PomoClock *clockPage = new PomoClock();
 
+    // ---------- PAGE 3: Notes ----------
+    NotesPage *notesPage = new NotesPage();
+
     // ---------- Add pages to stack ----------
     stack->addWidget(landingPage);        // index 0
     stack->addWidget(createAccountPage);  // index 1
+    stack->addWidget(loginPage);          // index 2
     stack->addWidget(clockPage);          // index 2
+    stack->addWidget(notesPage);          // index 4
 
     // ---------- Wiring ----------
     QObject::connect(getStartedBtn, &QPushButton::clicked, [=]() {
-        stack->setCurrentWidget(clockPage);
+        stack->setCurrentWidget(createAccountPage);
     });
 
     QObject::connect(loginBtn, &QPushButton::clicked, [=]() {
-        stack->setCurrentWidget(createAccountPage);
+        stack->setCurrentWidget(loginPage);
     });
 
     QObject::connect(createAccountPage, &CreateAccountPage::backClicked, [=]() {
         stack->setCurrentWidget(landingPage);
     });
 
-    QObject::connect(createAccountPage, &CreateAccountPage::accountCreated, [=]() {
+    QObject::connect(createAccountPage, &CreateAccountPage::accountCreated, [=](const QString &username) {
+        notesPage->setUser(username);
         stack->setCurrentWidget(clockPage);
+    });
+
+    QObject::connect(loginPage, &CreateAccountPage::backClicked, [=]() {
+        stack->setCurrentWidget(landingPage);
+    });
+
+    QObject::connect(loginPage, &CreateAccountPage::accountCreated, [=](const QString &username) {
+        notesPage->setUser(username);
+        stack->setCurrentWidget(clockPage);
+    });
+
+    QObject::connect(clockPage, &PomoClock::notesClicked, [=]() {
+        stack->setCurrentWidget(notesPage);
+    });
+
+    QObject::connect(notesPage, &NotesPage::backClicked, [=]() {
+        stack->setCurrentWidget(clockPage);
+    });
+
+    QObject::connect(clockPage, &PomoClock::logoutClicked, [=]() {
+        stack->setCurrentWidget(landingPage);
     });
 
     stack->show();

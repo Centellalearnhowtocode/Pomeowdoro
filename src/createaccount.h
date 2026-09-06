@@ -6,11 +6,12 @@
 class CreateAccountPage : public QWidget {
     Q_OBJECT
 public:
-    CreateAccountPage(QWidget *parent = nullptr);
+    explicit CreateAccountPage(bool loginMode = false, QWidget *parent = nullptr);
 
 signals:
-    void backClicked();       // tells main.cpp "user hit back"
-    void accountCreated();    // tells main.cpp "go to next screen"
+    void backClicked();
+    void accountCreated(const QString &username);
+    void authenticationFailed(const QString &message);
 };
 
 #endif

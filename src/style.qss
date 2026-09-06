@@ -1,22 +1,771 @@
 QWidget {
-  background: #cdb4db;
-  color: #7f5539;
+  background: #6E2A45;
+  color: #5C5C5C;
   font-family: "Segoe UI";
 }
 
-QLineEdit {
-  background: #3c3c3c;
-  border-radius: 6px;
-  padding: 6px;
+#backButton {
+  background: transparent;
+  color: #FBE0E6;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 8px;
 }
 
-QPushButton {
-  background: #ff6b6b;
-  color: white;
+#backButton:hover {
+  color: #FFFFFF;
+}
+
+#welcomePanel {
+  background: #8E3B5A;
+  border-radius: 18px;
+}
+
+#catMark {
+  background: #FBE0E6;
+  color: #C23158;
+  border-radius: 28px;
+  font-size: 30px;
+  font-weight: 900;
+  min-width: 56px;
+  max-width: 56px;
+  min-height: 56px;
+  max-height: 56px;
+}
+
+#welcomeTitle {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+#welcomeText {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 14px;
+}
+
+#formPanel {
+  background: #FFF8FA;
+  border-radius: 18px;
+}
+
+#eyebrow {
+  background: transparent;
+  color: #C23158;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#caTitle {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#subtitle {
+  background: transparent;
+  color: #92717C;
+  font-size: 13px;
+}
+
+#fieldLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#formInput {
+  background: #FFFFFF;
+  color: #5C5C5C;
+  border: 1px solid #E8CBD4;
+  border-radius: 9px;
+  padding: 10px 12px;
+  min-height: 20px;
+  font-size: 13px;
+}
+
+#formInput:focus {
+  border: 2px solid #C23158;
+  padding: 9px 11px;
+}
+
+#formInput::placeholder {
+  color: #B99DA7;
+}
+
+#termsCheck {
+  background: transparent;
+  color: #92717C;
+  font-size: 11px;
+}
+
+#termsCheck::indicator {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #D8B4C0;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+#termsCheck::indicator:checked {
+  background: #C23158;
+  border-color: #C23158;
+}
+
+#primaryButton {
+  background: #C23158;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  min-height: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#primaryButton:hover {
+  background: #A9264A;
+}
+
+#primaryButton:pressed {
+  background: #8E203F;
+}
+
+#landingPage {
+  background: #6E2A45;
+}
+
+#logo {
+  background: #FBE0E6;
+  color: #C23158;
+  border-radius: 66px;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+#landingEyebrow {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#title {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+#landingTagline {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+#landingPrimaryButton,
+#landingSecondaryButton {
+  min-height: 22px;
+  border-radius: 11px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#landingPrimaryButton {
+  background: #FBE0E6;
+  color: #6E2A45;
+  border: 2px solid #FBE0E6;
+}
+
+#landingPrimaryButton:hover {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+#landingPrimaryButton:pressed {
+  background: #F4CBD3;
+  border-color: #F4CBD3;
+}
+
+#landingSecondaryButton {
+  background: transparent;
+  color: #FBE0E6;
+  border: 2px solid #B96A82;
+}
+
+#landingSecondaryButton:hover {
+  background: #8E3B5A;
+  border-color: #FBE0E6;
+}
+
+#landingSecondaryButton:pressed {
+  background: #7E304E;
+}
+
+#landingStatus {
+  background: transparent;
+  color: #DDAFBE;
+  font-size: 11px;
+}
+
+#clockEyebrow {
+  background: transparent;
+  color: #C23158;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#clockTitle {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#timerPanel,
+#settingsPanel {
+  border-radius: 18px;
+}
+
+#timerPanel {
+  background: #FFF8FA;
+}
+
+#settingsPanel {
+  background: #8E3B5A;
+}
+
+#phaseLabel {
+  background: #FBE0E6;
+  color: #C23158;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 6px 10px;
+}
+
+#timeLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+#timerProgress {
+  background: #F2DDE3;
+  border: none;
+  border-radius: 4px;
+  min-height: 8px;
+  max-height: 8px;
+}
+
+#timerProgress::chunk {
+  background: #C23158;
+  border-radius: 4px;
+}
+
+#statusLabel {
+  background: transparent;
+  color: #8E3B5A;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#totalTimeLabel {
+  background: transparent;
+  color: #B28B98;
+  font-size: 11px;
+}
+
+#settingsTitle {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+#settingsHint {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 12px;
+}
+
+#settingsPanel QFormLayout QLabel {
+  background: transparent;
+  color: #FBE0E6;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#settingsPanel QSpinBox {
+  background: #A95773;
+  color: #FFFFFF;
+  border: 1px solid #b07186;
+  border-radius: 8px;
+  padding: 7px 8px;
+  min-width: 78px;
+}
+
+#settingsPanel QSpinBox:focus {
+  border: 2px solid #FBE0E6;
+  padding: 6px 7px;
+}
+
+#clockPrimaryButton,
+#clockSecondaryButton {
+  border-radius: 8px;
+  padding: 9px 11px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#clockPrimaryButton {
+  background: #C23158;
+  color: #FFFFFF;
+  border: 1px solid #C23158;
+}
+
+#clockPrimaryButton:hover {
+  background: #A9264A;
+}
+
+#clockPrimaryButton:pressed {
+  background: #8E203F;
+}
+
+#clockSecondaryButton {
+  background: #FBE0E6;
+  color: #8E3B5A;
+  border: 1px solid #FBE0E6;
+}
+
+#clockSecondaryButton:hover {
+  background: #FFFFFF;
+}
+
+#clockSecondaryButton:pressed {
+  background: #F4CBD3;
+}
+
+#timerPanel {
+  background: #FFF8FA;
+  border-radius: 22px;
+  min-height: 310px;
+}
+
+#clockTitle {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#phaseLabel {
+  background: #FBE0E6;
+  color: #C23158;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 6px 10px;
+}
+
+#timeLabel {
+  color: #6E2A45;
+  font-family: "Consolas";
+  font-size: 64px;
+  font-weight: 900;
+}
+
+#timerProgress {
+  background: #F2DDE3;
+  border: none;
+  border-radius: 3px;
+  min-height: 6px;
+  max-height: 6px;
+}
+
+#timerProgress::chunk {
+  background: #C23158;
+  border-radius: 3px;
+}
+
+#totalTimeLabel {
+  color: #B28B98;
+  font-size: 12px;
+}
+
+#statusLabel {
+  background: transparent;
+  color: #8E3B5A;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#clockPrimaryButton,
+#clockSecondaryButton {
+  min-width: 68px;
+  max-width: 68px;
+  min-height: 68px;
+  max-height: 68px;
+  border-radius: 34px;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+#clockPrimaryButton {
+  background: #C23158;
+  color: #FFFFFF;
+  border: 3px solid #C23158;
+}
+
+#clockPrimaryButton:hover {
+  background: #A9264A;
+  border-color: #A9264A;
+}
+
+#clockPrimaryButton:pressed {
+  background: #8E203F;
+}
+
+#clockSecondaryButton {
+  background: transparent;
+  color: #C23158;
+  border: 3px solid #E2A6B7;
+}
+
+#clockSecondaryButton:hover {
+  background: #FBE0E6;
+}
+
+#clockSecondaryButton:pressed {
+  background: #F4CBD3;
+}
+
+#railIcon {
+  background: #8E3B5A;
+  color: #FBE0E6;
+  border: 1px solid #B96A82;
+  border-radius: 9px;
+  min-width: 74px;
+  max-width: 74px;
+  min-height: 42px;
+  max-height: 42px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  qproperty-alignment: AlignCenter;
+}
+
+#railIcon:hover {
+  background: #A95773;
+  border-color: #FBE0E6;
+}
+
+#railIcon:pressed {
+  background: #C23158;
+}
+
+#settingsDialog {
+  background: #FFF8FA;
+  color: #6E2A45;
+}
+
+#settingsDialog QLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#settingsDialog QSpinBox {
+  background: #FFFFFF;
+  color: #6E2A45;
+  border: 1px solid #E8CBD4;
+  border-radius: 8px;
+  padding: 7px;
+  min-width: 105px;
+}
+
+#settingsDialog QDialogButtonBox QPushButton {
+  background: #FBE0E6;
+  color: #8E3B5A;
+  border: 1px solid #E2A6B7;
   border-radius: 8px;
   padding: 8px 16px;
+  font-weight: 800;
 }
 
-QPushButton:hover {
-  background: #ff8787;
+#settingsDialog QDialogButtonBox QPushButton:hover {
+  background: #C23158;
+  color: #FFFFFF;
+}
+
+#settingCard {
+  background: #FBE0E6;
+  border-radius: 18px;
+  min-height: 102px;
+}
+
+#settingLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#settingSpin {
+  background: transparent;
+  color: #6E2A45;
+  border: none;
+  font-size: 28px;
+  font-weight: 900;
+  padding-right: 28px;
+}
+
+#spinIncrease,
+#spinDecrease {
+  background: #B45A77;
+  color: #FFFFFF;
+  border: 1px solid #C9829A;
+  border-radius: 0;
+  min-width: 34px;
+  max-width: 34px;
+  min-height: 25px;
+  max-height: 25px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#spinIncrease:hover,
+#spinDecrease:hover {
+  background: #C23158;
+}
+
+#skipButton {
+  background: #8E3B5A;
+  color: #FBE0E6;
+  border: 1px solid #B96A82;
+  min-width: 74px;
+  max-width: 74px;
+  min-height: 42px;
+  max-height: 42px;
+  border-radius: 9px;
+  padding: 0;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#skipButton:hover {
+  background: #A95773;
+  border-color: #FBE0E6;
+}
+
+#skipButton:pressed {
+  background: #C23158;
+}
+
+#skipBtn {
+  min-width: 74px;
+  max-width: 74px;
+  min-height: 34px;
+  max-height: 34px;
+  border-radius: 8px;
+  font-size: 11px;
+}
+
+#notesPage {
+  background: #6E2A45;
+}
+
+#notesTitle {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#notesSubtitle,
+#notesStatus {
+  background: transparent;
+  color: #F7DCE4;
+  font-size: 12px;
+}
+
+#notesStatus {
+  color: #B98A9B;
+  min-height: 18px;
+}
+
+#notesListPanel,
+#notesEditorPanel {
+  background: #FFF8FA;
+  border-radius: 16px;
+}
+
+#notesListPanel {
+  min-width: 220px;
+}
+
+#notesEditorPanel {
+  min-width: 390px;
+}
+
+#notesSectionTitle {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#notesEmptyState {
+  background: #FBE0E6;
+  color: #B2788B;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+#notesList {
+  background: #FBE0E6;
+  color: #6E2A45;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+#notesList:focus {
+  outline: none;
+  border: 1px solid #E8CBD4;
+}
+
+#notesList::item {
+  padding: 12px 10px;
+  border-radius: 7px;
+}
+
+#notesList::item:selected {
+  background: #C23158;
+  color: #FFFFFF;
+}
+
+#notesEditorPanel QLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#notesEditorPanel #notesStatus {
+  color: #B98A9B;
+  font-weight: 400;
+}
+
+#notesInput,
+#notesEditor {
+  background: #FFFFFF;
+  color: #5C5C5C;
+  border: 1px solid #E8CBD4;
+  border-radius: 9px;
+  padding: 9px;
+  font-size: 13px;
+}
+
+#notesInput:focus,
+#notesEditor:focus {
+  border: 2px solid #C23158;
+}
+
+#notesEditor {
+  min-height: 128px;
+}
+
+#notesPrimaryButton,
+#notesSecondaryButton,
+#notesDangerButton {
+  border-radius: 8px;
+  padding: 9px 13px;
+  min-height: 18px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#notesPrimaryButton {
+  background: #C23158;
+  color: #FFFFFF;
+  border: 1px solid #C23158;
+}
+
+#notesSecondaryButton {
+  background: #FBE0E6;
+  color: #8E3B5A;
+  border: 1px solid #FBE0E6;
+}
+
+#notesDangerButton {
+  background: transparent;
+  color: #A9264A;
+  border: 1px solid #E1A7B7;
+}
+
+#notesPrimaryButton:hover,
+#notesSecondaryButton:hover,
+#notesDangerButton:hover {
+  background: #FFFFFF;
+}
+
+/* Final clock layout overrides */
+#timerPanel {
+  background: #FFF8FA;
+  border-radius: 22px;
+  min-height: 310px;
+}
+
+#timeLabel {
+  background: transparent;
+  color: #6E2A45;
+  font-family: "Consolas";
+  font-size: 64px;
+  font-weight: 900;
+  min-height: 78px;
+}
+
+#phaseLabel {
+  background: #FBE0E6;
+  color: #C23158;
+}
+
+#statusLabel {
+  background: transparent;
+  color: #8E3B5A;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#skipButton {
+  background: #8E3B5A;
+  color: #FBE0E6;
+  border: 1px solid #B96A82;
+  min-width: 74px;
+  max-width: 74px;
+  min-height: 42px;
+  max-height: 42px;
+  border-radius: 9px;
+  padding: 0;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
