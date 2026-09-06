@@ -15,6 +15,7 @@ class NotesPage : public QWidget {
 public:
     explicit NotesPage(QWidget *parent = nullptr);
     ~NotesPage() override;
+    void setUser(const QString &username);
 
 signals:
     void backClicked();
@@ -36,6 +37,7 @@ private:
     QTextEdit *bodyEdit;
     QLabel *statusLabel;
     QLabel *emptyStateLabel;
+    QString username;
     int selectedNoteId = -1;
 };
 

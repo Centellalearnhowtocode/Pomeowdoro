@@ -69,9 +69,32 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
         cardLabel->setObjectName("settingLabel");
         cardLabel->setAlignment(Qt::AlignCenter);
         spin->setAlignment(Qt::AlignCenter);
+        spin->setButtonSymbols(QAbstractSpinBox::NoButtons);
+
+        auto *increaseButton = new QPushButton("+");
+        increaseButton->setObjectName("spinIncrease");
+        increaseButton->setToolTip("Increase value");
+        auto *decreaseButton = new QPushButton("-");
+        decreaseButton->setObjectName("spinDecrease");
+        decreaseButton->setToolTip("Decrease value");
+        QObject::connect(increaseButton, &QPushButton::clicked, spin, &QSpinBox::stepUp);
+        QObject::connect(decreaseButton, &QPushButton::clicked, spin, &QSpinBox::stepDown);
+
+        auto *spinControls = new QVBoxLayout();
+        spinControls->setSpacing(0);
+        spinControls->setContentsMargins(0, 0, 0, 0);
+        spinControls->addWidget(increaseButton);
+        spinControls->addWidget(decreaseButton);
+
+        auto *valueLayout = new QHBoxLayout();
+        valueLayout->setSpacing(8);
+        valueLayout->setContentsMargins(0, 0, 0, 0);
+        valueLayout->addWidget(spin, 1);
+        valueLayout->addLayout(spinControls);
+
         QVBoxLayout *layout = new QVBoxLayout(card);
         layout->addWidget(cardLabel);
-        layout->addWidget(spin);
+        layout->addLayout(valueLayout);
         layout->setContentsMargins(12, 14, 12, 12);
         layout->setSpacing(4);
         return card;
@@ -131,6 +154,17 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     timer = new QTimer(this);
     timer->setInterval(1000);
     connect(timer, &QTimer::timeout, this, &PomoClock::tick);
+
+    connect(workSpin, qOverload<int>(&QSpinBox::valueChanged), this, [this]() {
+        if (!timer->isActive() && currentPhase == Phase::Work) {
+            startPhase(Phase::Work);
+        }
+    });
+    connect(breakSpin, qOverload<int>(&QSpinBox::valueChanged), this, [this]() {
+        if (!timer->isActive() && currentPhase == Phase::Break) {
+            startPhase(Phase::Break);
+        }
+    });
 
     connect(settingsIcon, &QPushButton::clicked, this, &PomoClock::onSettingsClicked);
     connect(startBtn, &QPushButton::clicked, this, &PomoClock::onStartClicked);
@@ -218,7 +252,6 @@ void PomoClock::onStartClicked() {
         timer->start();
         running = true;
         startBtn->setText("||");
-        tick();
     }
 }
 

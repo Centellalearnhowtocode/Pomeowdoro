@@ -41,14 +41,23 @@ template <> constexpr inline auto CreateAccountPage::qt_create_metaobjectdata<qt
         "CreateAccountPage",
         "backClicked",
         "",
-        "accountCreated"
+        "accountCreated",
+        "username",
+        "authenticationFailed",
+        "message"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'backClicked'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'accountCreated'
-        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SignalData<void(const QString &)>(3, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 4 },
+        }}),
+        // Signal 'authenticationFailed'
+        QtMocHelpers::SignalData<void(const QString &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 6 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -73,14 +82,17 @@ void CreateAccountPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->backClicked(); break;
-        case 1: _t->accountCreated(); break;
+        case 1: _t->accountCreated((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->authenticationFailed((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (CreateAccountPage::*)()>(_a, &CreateAccountPage::backClicked, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (CreateAccountPage::*)()>(_a, &CreateAccountPage::accountCreated, 1))
+        if (QtMocHelpers::indexOfMethod<void (CreateAccountPage::*)(const QString & )>(_a, &CreateAccountPage::accountCreated, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (CreateAccountPage::*)(const QString & )>(_a, &CreateAccountPage::authenticationFailed, 2))
             return;
     }
 }
@@ -104,14 +116,14 @@ int CreateAccountPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -123,8 +135,14 @@ void CreateAccountPage::backClicked()
 }
 
 // SIGNAL 1
-void CreateAccountPage::accountCreated()
+void CreateAccountPage::accountCreated(const QString & _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1);
+}
+
+// SIGNAL 2
+void CreateAccountPage::authenticationFailed(const QString & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
 }
 QT_WARNING_POP

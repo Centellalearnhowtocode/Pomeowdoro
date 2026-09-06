@@ -6,6 +6,8 @@
 #include <QPushButton>
 #include <QCheckBox>
 #include <QFrame>
+#include <QCryptographicHash>
+#include <QSettings>
 
 CreateAccountPage::CreateAccountPage(bool loginMode, QWidget *parent) : QWidget(parent) {
     QPushButton *backBtn = new QPushButton("<  Back");
@@ -73,6 +75,10 @@ CreateAccountPage::CreateAccountPage(bool loginMode, QWidget *parent) : QWidget(
     QPushButton *createBtn = new QPushButton(loginMode ? "Log in" : "Create Account");
     createBtn->setObjectName("primaryButton");
 
+    QLabel *statusLabel = new QLabel();
+    statusLabel->setObjectName("notesStatus");
+    statusLabel->setWordWrap(true);
+
     QVBoxLayout *formLayout = new QVBoxLayout(formPanel);
     formLayout->addWidget(eyebrow);
     formLayout->addSpacing(7);
@@ -90,6 +96,7 @@ CreateAccountPage::CreateAccountPage(bool loginMode, QWidget *parent) : QWidget(
         formLayout->addSpacing(16);
     }
     formLayout->addWidget(createBtn);
+    formLayout->addWidget(statusLabel);
     formLayout->setContentsMargins(32, 28, 32, 28);
 
     QVBoxLayout *mainLayout = new QVBoxLayout();
@@ -103,7 +110,39 @@ CreateAccountPage::CreateAccountPage(bool loginMode, QWidget *parent) : QWidget(
     mainLayout->setSpacing(14);
     setLayout(mainLayout);
 
-    // wiring buttons to signals — main.cpp decides what happens
     connect(backBtn, &QPushButton::clicked, this, &CreateAccountPage::backClicked);
-    connect(createBtn, &QPushButton::clicked, this, &CreateAccountPage::accountCreated);
+    connect(createBtn, &QPushButton::clicked, this, [=]() {
+        const QString username = idInput->text().trimmed();
+        const QString password = pwInput->text();
+        if (username.isEmpty() || password.isEmpty()) {
+            statusLabel->setText("Enter both your ID/Username and password.");
+            return;
+        }
+
+        QSettings accounts("Pomeowdoro", "Pomeowdoro");
+        const QString key = username.toCaseFolded();
+        const QString passwordHash = QString::fromLatin1(
+            QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex());
+
+        if (loginMode) {
+            if (!accounts.contains("accounts/" + key)
+                || accounts.value("accounts/" + key).toString() != passwordHash) {
+                statusLabel->setText("The username or password is incorrect.");
+                return;
+            }
+        } else {
+            if (accounts.contains("accounts/" + key)) {
+                statusLabel->setText("That username already exists.");
+                return;
+            }
+            if (!agreeCheck->isChecked()) {
+                statusLabel->setText("Please agree to the Terms of Use and Privacy.");
+                return;
+            }
+            accounts.setValue("accounts/" + key, passwordHash);
+            accounts.sync();
+        }
+
+        emit accountCreated(key);
+    });
 }

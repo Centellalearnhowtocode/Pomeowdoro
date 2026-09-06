@@ -23,7 +23,8 @@ NotesPage::NotesPage(QWidget *parent) : QWidget(parent) {
     database.open();
 
     QSqlQuery createQuery(database);
-    createQuery.exec("CREATE TABLE IF NOT EXISTS notes (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, body TEXT NOT NULL, updated_at TEXT NOT NULL)");
+    createQuery.exec("CREATE TABLE IF NOT EXISTS notes (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT NOT NULL DEFAULT '', title TEXT NOT NULL, body TEXT NOT NULL, updated_at TEXT NOT NULL)");
+    createQuery.exec("ALTER TABLE notes ADD COLUMN username TEXT NOT NULL DEFAULT ''");
 
     auto *backButton = new QPushButton("<  BACK TO CLOCK");
     backButton->setObjectName("backButton");
@@ -111,6 +112,11 @@ NotesPage::NotesPage(QWidget *parent) : QWidget(parent) {
     layout->setContentsMargins(34, 24, 34, 26);
     layout->setSpacing(8);
 
+}
+
+void NotesPage::setUser(const QString &newUsername) {
+    username = newUsername;
+    clearEditor();
     loadNotes();
 }
 
@@ -124,7 +130,9 @@ NotesPage::~NotesPage() {
 void NotesPage::loadNotes() {
     notesList->clear();
     QSqlQuery query(database);
-    query.exec("SELECT id, title, body FROM notes ORDER BY updated_at DESC");
+    query.prepare("SELECT id, title, body FROM notes WHERE username = ? ORDER BY updated_at DESC");
+    query.addBindValue(username);
+    query.exec();
     while (query.next()) {
         auto *item = new QListWidgetItem(query.value(1).toString());
         item->setData(Qt::UserRole, query.value(0));
@@ -147,7 +155,8 @@ bool NotesPage::validateEditor() {
 void NotesPage::saveNote() {
     if (!validateEditor()) return;
     QSqlQuery query(database);
-    query.prepare("INSERT INTO notes (title, body, updated_at) VALUES (?, ?, ?)");
+    query.prepare("INSERT INTO notes (username, title, body, updated_at) VALUES (?, ?, ?, ?)");
+    query.addBindValue(username);
     query.addBindValue(titleEdit->text().trimmed().isEmpty() ? "Untitled note" : titleEdit->text().trimmed());
     query.addBindValue(bodyEdit->toPlainText());
     query.addBindValue(QDateTime::currentDateTime().toString(Qt::ISODate));
@@ -163,11 +172,12 @@ void NotesPage::saveNote() {
 void NotesPage::updateNote() {
     if (selectedNoteId < 0 || !validateEditor()) return;
     QSqlQuery query(database);
-    query.prepare("UPDATE notes SET title = ?, body = ?, updated_at = ? WHERE id = ?");
+    query.prepare("UPDATE notes SET title = ?, body = ?, updated_at = ? WHERE id = ? AND username = ?");
     query.addBindValue(titleEdit->text().trimmed().isEmpty() ? "Untitled note" : titleEdit->text().trimmed());
     query.addBindValue(bodyEdit->toPlainText());
     query.addBindValue(QDateTime::currentDateTime().toString(Qt::ISODate));
     query.addBindValue(selectedNoteId);
+    query.addBindValue(username);
     if (query.exec()) {
         loadNotes();
         statusLabel->setText("Note updated.");
@@ -182,8 +192,9 @@ void NotesPage::deleteNote() {
         return;
     }
     QSqlQuery query(database);
-    query.prepare("DELETE FROM notes WHERE id = ?");
+    query.prepare("DELETE FROM notes WHERE id = ? AND username = ?");
     query.addBindValue(selectedNoteId);
+    query.addBindValue(username);
     if (query.exec()) {
         loadNotes();
         clearEditor();
@@ -198,8 +209,9 @@ void NotesPage::loadSelectedNote() {
     if (!item) return;
     selectedNoteId = item->data(Qt::UserRole).toInt();
     QSqlQuery query(database);
-    query.prepare("SELECT title, body FROM notes WHERE id = ?");
+    query.prepare("SELECT title, body FROM notes WHERE id = ? AND username = ?");
     query.addBindValue(selectedNoteId);
+    query.addBindValue(username);
     if (query.exec() && query.next()) {
         titleEdit->setText(query.value(0).toString());
         bodyEdit->setPlainText(query.value(1).toString());

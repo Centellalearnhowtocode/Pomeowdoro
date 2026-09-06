@@ -408,4 +408,8 @@ CMakeFiles/Pomeowdoro.dir/src/createaccount.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QCheckBox \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qcheckbox.h \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/QFrame
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QFrame \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QCryptographicHash \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qcryptographichash.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qsettings.h

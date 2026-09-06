@@ -102,7 +102,8 @@ int main(int argc, char *argv[]) {
         stack->setCurrentWidget(landingPage);
     });
 
-    QObject::connect(createAccountPage, &CreateAccountPage::accountCreated, [=]() {
+    QObject::connect(createAccountPage, &CreateAccountPage::accountCreated, [=](const QString &username) {
+        notesPage->setUser(username);
         stack->setCurrentWidget(clockPage);
     });
 
@@ -110,7 +111,8 @@ int main(int argc, char *argv[]) {
         stack->setCurrentWidget(landingPage);
     });
 
-    QObject::connect(loginPage, &CreateAccountPage::accountCreated, [=]() {
+    QObject::connect(loginPage, &CreateAccountPage::accountCreated, [=](const QString &username) {
+        notesPage->setUser(username);
         stack->setCurrentWidget(clockPage);
     });
 

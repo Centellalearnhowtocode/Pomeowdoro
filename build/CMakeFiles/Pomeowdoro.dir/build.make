@@ -72,7 +72,7 @@ Pomeowdoro_autogen/timestamp: C:/Qt/6.11.2/mingw_64/bin/moc.exe
 Pomeowdoro_autogen/timestamp: C:/Qt/6.11.2/mingw_64/bin/uic.exe
 Pomeowdoro_autogen/timestamp: CMakeFiles/Pomeowdoro.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Pomeowdoro"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenInfo.json" Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutogenInfo.json" ""
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/Pomeowdoro_autogen/timestamp"
 
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Users/aDMIN/OneDrive\ -\ Royal\ University\ of\ Phnom\ Penh/Desktop/Pomeowdoro/Pomeowdoro/src/resources.qrc
@@ -83,7 +83,7 @@ Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Users/aDMIN/OneDrive\ -\ Roy
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Qt/6.11.2/mingw_64/bin/rcc.exe
 Pomeowdoro_autogen/UVLADIE3JM/qrc_resources.cpp: C:/Qt/6.11.2/mingw_64/bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\aDMIN\OneDrive - Royal University of Phnom Penh\Desktop\Pomeowdoro\Pomeowdoro\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for src/resources.qrc"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json" Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc "C:/Users/aDMIN/OneDrive - Royal University of Phnom Penh/Desktop/Pomeowdoro/Pomeowdoro/build/CMakeFiles/Pomeowdoro_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json" 
 
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: CMakeFiles/Pomeowdoro.dir/flags.make
 CMakeFiles/Pomeowdoro.dir/Pomeowdoro_autogen/mocs_compilation.cpp.obj: CMakeFiles/Pomeowdoro.dir/includes_CXX.rsp

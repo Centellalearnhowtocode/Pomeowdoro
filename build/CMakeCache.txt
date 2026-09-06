@@ -22,7 +22,7 @@ CMAKE_AR:FILEPATH=C:/Qt/Tools/mingw1310_64/bin/ar.exe
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -138,7 +138,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=C:/Qt/Tools/mingw1310_64/bin/ld.exe
 
 //Path to a program.
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/msys64/ucrt64/bin/mingw32-make.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -185,7 +185,7 @@ CMAKE_PROJECT_NAME:STATIC=Pomeowdoro
 CMAKE_RANLIB:FILEPATH=C:/Qt/Tools/mingw1310_64/bin/ranlib.exe
 
 //RC compiler
-CMAKE_RC_COMPILER:FILEPATH=C:/Qt/Tools/mingw1310_64/bin/windres.exe
+CMAKE_RC_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/windres.exe
 
 //Flags for Windows Resource Compiler during all build types.
 CMAKE_RC_FLAGS:STRING=
