@@ -8,10 +8,6 @@
 #include <QPainterPath>
 #include <QGraphicsDropShadowEffect>
 #include <QFont>
-
-// ---------------------------------------------------------
-// CatIconWidget — draws the pink circle + hand-drawn cat face
-// ---------------------------------------------------------
 class CatIconWidget : public QWidget {
 public:
     explicit CatIconWidget(QWidget *parent = nullptr) : QWidget(parent) {

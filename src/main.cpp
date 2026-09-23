@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     stack->setWindowTitle("Pomeowdoro");
     stack->resize(788, 456);
 
-    // ---------- PAGE 0: Landing ----------
+    
     QWidget *landingPage = new QWidget();
     landingPage->setObjectName("landingPage");
 
