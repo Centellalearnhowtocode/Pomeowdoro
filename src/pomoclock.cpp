@@ -38,7 +38,7 @@ PomoClock::PomoClock(QWidget *parent) : QWidget(parent) {
     QLabel *catAnimation = new QLabel();
 catAnimation->setObjectName("catAnimation");
 catAnimation->setAlignment(Qt::AlignCenter);
-catAnimation->setFixedSize(80, 80); // adjust size to taste
+catAnimation->setFixedSize(140, 280); // adjust size to taste
 
 QMovie *catMovie = new QMovie(":/image/scuba-cat.gif");
 catAnimation->setMovie(catMovie);
@@ -49,13 +49,13 @@ catMovie->start();
     statusLabel->setObjectName("statusLabel");
     statusLabel->setAlignment(Qt::AlignCenter);
 
-        progressBar = new QProgressBar();
+    progressBar = new QProgressBar();
     progressBar->setObjectName("timerProgress");
     progressBar->setRange(0, 1500);
     progressBar->setValue(0);
     progressBar->setTextVisible(false);
 
-totalTimeLabel = new QLabel("Total time today: 00:00:00");
+    totalTimeLabel = new QLabel("Total time today: 00:00:00");
     totalTimeLabel = new QLabel("Total time today: 00:00:00");
     totalTimeLabel->setObjectName("totalTimeLabel");
     totalTimeLabel->setAlignment(Qt::AlignCenter);
@@ -146,6 +146,7 @@ totalTimeLabel = new QLabel("Total time today: 00:00:00");
     QHBoxLayout *topLayout = new QHBoxLayout();
     topLayout->addStretch();
     topLayout->addWidget(timerArea, 1);
+    topLayout->addWidget(catAnimation, 0, Qt::AlignCenter);
     topLayout->addLayout(railLayout);
     topLayout->addStretch();
     topLayout->setSpacing(28);
